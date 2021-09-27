@@ -1,0 +1,118 @@
+.appContainer {
+    /* border: 5px solid blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 125px;
+}
+.appContainerLeft {
+    margin-left: 120px;
+    margin-right: 200px;
+    margin-bottom: 50px;
+    margin-top: 25px;
+}
+.header {
+    font-size: 50px;
+}
+.content {
+    margin-left: 40px;
+}
+.app {
+    /* border: 5px solid red */
+}
+
+.blue {
+    color: rgb(76, 129, 228);
+}
+
+.red {
+    color: rgb(208, 77, 61);
+}
+
+.yellow {
+    color: rgb(233, 183, 64);
+}
+
+.genBtn {
+    background-color: rgb(85, 160, 88);
+    border: none;
+    padding: 15px 40px;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 50px;
+}
+
+.searchBarLeft {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top: 2px solid lightgrey;
+    border-bottom: 2px solid lightgrey;
+    border-left: 2px solid lightgrey;
+    border-right: none;
+    height: 40px;
+    width: 200px;
+}
+
+.searchBarRight {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-left: none;
+    border-top: 2px solid lightgrey;
+    border-bottom: 2px solid lightgrey;
+    height: 40px;
+    border-right: 2px solid lightgrey;
+    width: 200px;
+
+}
+
+.searchBarMiddle {
+    border-left: none;
+    border-right: none;
+    height: 40px;
+    border-top: 2px solid lightgrey;
+    border-bottom: 2px solid lightgrey;
+    width: 200px;
+}
+
+.inputContainer {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+input:focus {
+    outline: none;
+}
+
+hr {
+    color: lightgray;
+}
+
+.seoLinks {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contentHeaderContainer {
+    background-image: url(https://images.pexels.com/photos/2244746/pexels-photo-2244746.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.contentHeader {
+    color: white;
+    font-size: 50px;
+}
+
+.contentHeader2 {
+    color: white;
+}
+
