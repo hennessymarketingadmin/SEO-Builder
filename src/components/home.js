@@ -573,7 +573,7 @@ class Home extends Component {
                 <p>{'height: 400px;'}</p> 
                 <p>{'display: flex;'}</p>
                 <p>{'flex-direction: column;'}</p>
-                <p>{'justify-content: center'}</p>
+                <p>{'justify-content: center;'}</p>
                 <p>{'align-items: center;'}</p>
                 <p>{'}'}</p>
                 <p>{'.contentHeader { '}</p>
