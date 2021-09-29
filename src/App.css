@@ -1,5 +1,4 @@
 .appContainer {
-    /* border: 5px solid blue; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,9 +17,6 @@
 .content {
     margin-left: 40px;
 }
-.app {
-    /* border: 5px solid red */
-}
 
 .blue {
     color: rgb(76, 129, 228);
@@ -37,9 +33,9 @@
 .genBtn {
     background-color: rgb(85, 160, 88);
     border: none;
-    padding: 15px 40px;
+    padding: 10px 30px;
     color: white;
-    margin-top: 20px;
+    margin: 0px;
     margin-bottom: 30px;
     cursor: pointer;
     font-size: 20px;
@@ -49,22 +45,23 @@
 .searchBarLeft {
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
-    border-top: 2px solid lightgrey;
-    border-bottom: 2px solid lightgrey;
-    border-left: 2px solid lightgrey;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    border-left: 1px solid lightgrey;
     border-right: none;
     height: 40px;
     width: 200px;
+    padding-left: 10px;
 }
 
 .searchBarRight {
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
     border-left: none;
-    border-top: 2px solid lightgrey;
-    border-bottom: 2px solid lightgrey;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
     height: 40px;
-    border-right: 2px solid lightgrey;
+    border-right: 1px solid lightgrey;
     width: 200px;
 
 }
@@ -73,8 +70,8 @@
     border-left: none;
     border-right: none;
     height: 40px;
-    border-top: 2px solid lightgrey;
-    border-bottom: 2px solid lightgrey;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
     width: 200px;
 }
 
@@ -88,7 +85,7 @@ input:focus {
 }
 
 hr {
-    color: lightgray;
+    border: 1px solid lightgray;
 }
 
 .seoLinks {
@@ -115,4 +112,55 @@ hr {
 .contentHeader2 {
     color: white;
 }
+/* _______________________________ */
 
+.dropdownContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid red; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 50px;
+
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    background-color: rgb(247, 248, 249);
+    padding: 12px 40px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    border-radius: 4px;
+}
+
+.dropdown:hover {
+    border: 1px solid lightgray;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+
+
+.dropdownLeft {
+    right: 0;
+}
+
+.dropdownRight {
+    left: 0;
+}

@@ -505,6 +505,38 @@ class Home extends Component {
                     }}
                 ></input>
                 </div>
+                {/* <div className='dropdownContainer'>
+                <div class="dropdown">
+                    <span>Dealers</span>
+                    <div class="dropdown-content dropdownLeft">
+                        <p>Dealer</p>
+                        <p>Dealer</p>
+                        <p>Dealer</p>
+                        <p>Dealer</p>
+                        <p>Dealer</p>
+                        <p>Dealer</p>
+                        <p>Dealer</p>
+                        <p>Dealer</p>
+                        <p>Dealer</p>
+                        <p>Dealer</p>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <span>Service</span>
+                    <div class="dropdown-content dropdownRight">
+                        <p>Service</p>
+                        <p>Service</p>
+                        <p>Service</p>
+                        <p>Service</p>
+                        <p>Service</p>
+                        <p>Service</p>
+                        <p>Service</p>
+                        <p>Service</p>
+                        <p>Service</p>
+                        <p>Service</p>
+                    </div>
+                </div>
+                </div> */}
                 <button
                 className='genBtn'
                 onClick = {() => {
@@ -519,7 +551,10 @@ class Home extends Component {
                 {this.state.display ?
 
                 <div className='content'>
-                
+                <hr></hr>
+                <p>{'Title: ' + this.state.year + ' ' + this.state.make + ' ' + this.state.model}</p>
+                <p>Discription:</p>
+                <p>{'Find great deals for your oil change for your ' + this.state.year + ' ' + this.state.make + ' ' + this.state.model + ' at ' + this.state.dealer + ' located in ' + this.state.city + ' and metro area'}</p>
                 <hr></hr>
                 <div className='contentHeaderContainer'>
                     <p className='contentHeader2'>{'<div class=\'contentHeaderContainer\'>'}</p>
