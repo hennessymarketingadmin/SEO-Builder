@@ -1,11 +1,24 @@
 import React, { Component } from 'react';
 import './App.css';
-import OilChanges from './components/oilChanges.js';
+import OilChanges from './components/pages/oilChanges.js';
+import BatteryPage from './components/pages/battery.js';
+import CabinPage from './components/pages/cabin.js';
+import CoolantPage from './components/pages/coolant.js';
+import DiagnosticsPage from './components/pages/diagnostics.js';
+import FilterPage from './components/pages/filter.js';
+import RecallPage from './components/pages/recall.js';
+import SchedulePage from './components/pages/schedule.js';
+import TiresPage from './components/pages/tires.js';
+import TransmissionPage from './components/pages/transmission.js';
+import WheelsPage from './components/pages/wheels.js';
+import BrakesPage from './components/pages/brakes.js';
+
 
 class App extends Component {
     state = {
         display: false,
         selected: '',
+        page: '',
         make: '',
         model: '',
         year: '',
@@ -28,6 +41,60 @@ class App extends Component {
             arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
         }
         return arr.join(' ')
+    }
+
+    const selectDealer = (dealer) => {
+        if (dealer === 'Honda') {
+            this.setState({dealer: 'HennessyHonda'})
+            this.setState({address: 'random address'})
+            this.setState({state: 'Georgia'})
+            this.setState({city: 'Marietta'})
+            this.setState({phone: '6786438317'})
+            this.setState({serviceCenter: 'https://www.google.com/'})
+            this.setState({serviceApp: 'https://www.google.com/'})
+            this.setState({serviceSpecials: 'https://www.google.com/'})
+        }
+    }
+
+    const displayPage = (page) => {
+
+        if (page === 'Oil') {
+            return <OilChanges 
+                make={this.state.make}
+                model={this.state.model}
+                year={this.state.year}
+                address={this.state.address}
+                state={this.state.state}
+                city={this.state.city}
+                dealer={this.state.dealer}
+                phone={this.state.phone}
+                serviceCenter={this.state.serviceCenter}
+                serviceApp={this.state.serviceApp}
+                serviceSpecials={this.state.serviceSpecials}
+            />
+        }else if (page === 'Filter') {
+            return <FilterPage />
+        }else if (page === 'Brakes') {
+            return <BrakesPage />
+        }else if (page === 'Battery') {
+            return <BatteryPage />
+        }else if (page === 'Wheels') {
+            return <WheelsPage />
+        }else if (page === 'Tires') {
+            return <TiresPage />
+        }else if (page === 'Cabin') {
+            return <CabinPage />
+        }else if (page === 'Transmission') {
+            return <TransmissionPage />
+        }else if (page === 'Coolant') {
+            return <CoolantPage />
+        }else if (page === 'Diagnostics') {
+            return <DiagnosticsPage />
+        }else if (page === 'Schedule') {
+            return <SchedulePage />
+        }else if (page === 'Recall') {
+            return <RecallPage />
+        }
     }
 
 
@@ -60,7 +127,7 @@ class App extends Component {
             }}
             ></input>
             </div>
-            <div className='inputContainer'>
+            {/* <div className='inputContainer'>
             <input 
             className='searchBarLeft'
             placeholder='Address'
@@ -128,12 +195,12 @@ class App extends Component {
                     let text = event.target.value;
                     this.setState({serviceSpecials: text})
                 }}
-            ></input>
-            </div>
+            ></input> */}
+            {/* </div> */}
             <div className='dropdownContainer'>
-            <div class="dropdown">
+            <div className="dropdown">
                 <span>{this.state.selected === '' ? 'Dealers' : this.state.selected}</span>
-                <div class="dropdown-content dropdownLeft">
+                <div className="dropdown-content dropdownLeft">
                     <p onClick={()=>{this.setState({selected: 'Honda'})}}>Honda</p>
                     <p onClick={()=>{this.setState({selected: 'Porche'})}}>Porche</p>
                     <p onClick={()=>{this.setState({selected: 'Mazda'})}}>Mazda</p>
@@ -147,21 +214,21 @@ class App extends Component {
                     <p onClick={()=>{this.setState({selected: 'Cadillac'})}} >Cadillac</p>
                 </div>
             </div>
-            <div class="dropdown">
-                <span>Service</span>
-                <div class="dropdown-content dropdownRight">
-                    <p>Oil</p>
-                    <p>Filter</p>
-                    <p>Brakes</p>
-                    <p>Battery</p>
-                    <p>Wheels</p>
-                    <p>Tires</p>
-                    <p>Cabin & Engine Filter</p>
-                    <p>Transmission</p>
-                    <p>Coolant Flush</p>
-                    <p>Diagnostics</p>
-                    <p>Schedule Maintenance</p>
-                    <p>Recall Information</p>
+            <div className="dropdown">
+                <span>{this.state.page === '' ? 'Services' : this.state.page}</span>
+                <div className="dropdown-content dropdownRight">
+                    <p onClick={()=>{this.setState({page: 'Oil'})}}>Oil</p>
+                    <p onClick={()=>{this.setState({page: 'Filter'})}}>Filter</p>
+                    <p onClick={()=>{this.setState({page: 'Brakes'})}}>Brakes</p>
+                    <p onClick={()=>{this.setState({page: 'Battery'})}}>Battery</p>
+                    <p onClick={()=>{this.setState({page: 'Wheels'})}}>Wheels</p>
+                    <p onClick={()=>{this.setState({page: 'Tires'})}}>Tires</p>
+                    <p onClick={()=>{this.setState({page: 'Cabin'})}}>Cabin & Engine Filter</p>
+                    <p onClick={()=>{this.setState({page: 'Transmission'})}}>Transmission</p>
+                    <p onClick={()=>{this.setState({page: 'Coolant'})}}>Coolant Flush</p>
+                    <p onClick={()=>{this.setState({page: 'Diagnostics'})}}>Diagnostics</p>
+                    <p onClick={()=>{this.setState({page: 'Schedule'})}}>Schedule Maintenance</p>
+                    <p onClick={()=>{this.setState({page: 'Recall'})}}>Recall Information</p>
                 </div>
             </div>
             </div>
@@ -169,22 +236,14 @@ class App extends Component {
             className='genBtn'
             onClick = {() => {
                 this.setState({display: true})
+                selectDealer(this.state.selected)
             }}>Generate</button>
         
         {this.state.display ? 
-        <OilChanges 
-            make={this.state.make}
-            model={this.state.model}
-            year={this.state.year}
-            address={this.state.address}
-            state={this.state.state}
-            city={this.state.city}
-            dealer={this.state.dealer}
-            phone={this.state.phone}
-            serviceCenter={this.state.serviceCenter}
-            serviceApp={this.state.serviceApp}
-            serviceSpecials={this.state.serviceSpecials}
-        /> 
+        // <OilChanges 
+            
+        // /> 
+        displayPage(this.state.page)
         : null}
         </div>
     );

@@ -270,7 +270,7 @@ class oilChanges extends Component {
             <h1 className='contentHeader'>{'<h1 class=\'contentHeader\'>' + this.props.make + ' Oil Change in ' + this.props.city + '</h1>'}</h1>
                 <p className='contentHeader2'>{'</div>'}</p>
             </div>
-            <h1>{'<h1>Why Do Cars Need An oil change? | Oil Change Service ' + this.props.city + '</h1>'}</h1>
+            <h1>{'<h1>Why Do Cars Need An oil change? | Oil Change Service in ' + this.props.city + '</h1>'}</h1>
             {generateParagraphOne()}
             <h1>{'<h1>What is Synthetic-Blend Oil? </h1>'}</h1>
             {generateParagraphTwo()}

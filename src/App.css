@@ -134,6 +134,7 @@ hr {
     padding: 12px 40px;
     border-radius: 4px;
     cursor: pointer;
+    margin-right: 5px;
 }
 
 .dropdown-content {
