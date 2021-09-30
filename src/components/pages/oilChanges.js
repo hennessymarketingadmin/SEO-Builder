@@ -332,7 +332,6 @@ class oilChanges extends Component {
             <p>{'@media screen and (min-width: 300px) and (max-width: 400px) {'}</p>
             <p>{'height: 200px;'}</p>
             <p>{'}'}</p>
-
             <p>{'@media screen and (min-width: 300px) and (max-width: 400px) {'}</p>
             <p>{'.contentHeaderContainer{'}</p>
             <p>{'height: 200px;'}</p>

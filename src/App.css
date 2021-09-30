@@ -101,7 +101,7 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
 }
 
 .contentHeader {
@@ -164,4 +164,25 @@ display: block;
 
 .dropdownRight {
     left: 0;
+}
+.coupon-button-link-123645565745-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 500px;
+}
+.coupon-button-link-123645565745 {
+    color: #007FCB;
+    background-color: white;
+    border: 3px solid #007FCB;
+    border-radius: 16px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight:bold;
+    padding:10px 40px;
+    min-width:25%;
+    text-decoration:none;
+}
+.brakesHeaderparagraph {
+    color: white;
 }
