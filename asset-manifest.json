@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/SEO-Builder/static/css/main.fbdc16a0.chunk.css",
-    "main.js": "/SEO-Builder/static/js/main.34e98c2e.chunk.js",
-    "main.js.map": "/SEO-Builder/static/js/main.34e98c2e.chunk.js.map",
+    "main.js": "/SEO-Builder/static/js/main.a2c5eca9.chunk.js",
+    "main.js.map": "/SEO-Builder/static/js/main.a2c5eca9.chunk.js.map",
     "runtime-main.js": "/SEO-Builder/static/js/runtime-main.bbe7f899.js",
     "runtime-main.js.map": "/SEO-Builder/static/js/runtime-main.bbe7f899.js.map",
     "static/js/2.4270af8d.chunk.js": "/SEO-Builder/static/js/2.4270af8d.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.bbe7f899.js",
     "static/js/2.4270af8d.chunk.js",
     "static/css/main.fbdc16a0.chunk.css",
-    "static/js/main.34e98c2e.chunk.js"
+    "static/js/main.a2c5eca9.chunk.js"
   ]
 }
