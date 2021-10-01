@@ -45,7 +45,7 @@ class App extends Component {
 
     const selectDealer = (dealer) => {
         if (dealer === 'Honda') {
-            this.setState({dealer: 'HennessyHonda'})
+            this.setState({dealer: 'Hennessy Honda'})
             this.setState({address: '8931 Highway 92Woodstock, GA 30189'})
             this.setState({state: 'Georgia'})
             this.setState({city: 'Marietta'})
@@ -367,76 +367,6 @@ class App extends Component {
             }}
             ></input>
             </div>
-            {/* <div className='inputContainer'>
-            <input 
-            className='searchBarLeft'
-            placeholder='Address'
-            onChange = {(event) => {
-                let text = event.target.value;
-                this.setState({address: uppercaseFirst(text)})
-            }}
-            ></input>
-            <input 
-            className='searchBarMiddle'
-            placeholder='City'
-            onChange = {(event) => {
-                let text = event.target.value;
-                this.setState({city: uppercaseFirst(text)})
-            }}
-            ></input>
-            <input 
-            className='searchBarRight'
-            placeholder='State'
-            onChange = {(event) => {
-                let text = event.target.value;
-                this.setState({state: uppercaseFirst(text)})
-            }}
-            ></input>
-            </div>
-            <div className='inputContainer'>
-            <input 
-            className='searchBarLeft'
-            placeholder='Dealer'
-            onChange = {(event) => {
-                let text = event.target.value;
-                this.setState({dealer: uppercaseFirst(text)})
-            }}
-            ></input>
-            <input 
-            className='searchBarRight'
-            placeholder='Phone'
-            onChange = {(event) => {
-                let text = event.target.value;
-                this.setState({phone: uppercaseFirst(text)})
-            }}
-            ></input>
-            </div>
-            <div className='inputContainer'>
-                <input 
-                className='searchBarLeft'
-                placeholder='Service Center'
-                onChange = {(event) => {
-                    let text = event.target.value;
-                    this.setState({serviceCenter: text})
-                }}
-            ></input>
-            <input 
-            className='searchBarMiddle'
-                placeholder='Service appointment'
-                onChange = {(event) => {
-                    let text = event.target.value;
-                    this.setState({serviceApp: text})
-                }}
-            ></input>
-            <input 
-            className='searchBarRight'
-                placeholder='Service specials'
-                onChange = {(event) => {
-                    let text = event.target.value;
-                    this.setState({serviceSpecials: text})
-                }}
-            ></input> */}
-            {/* </div> */}
             <div className='dropdownContainer'>
             <div className="dropdown">
                 <span>{this.state.selected === '' ? 'Dealers' : this.state.selected}</span>
@@ -477,13 +407,6 @@ class App extends Component {
                 </div>
             </div>
             </div>
-            {/* <button
-            className='genBtn'
-            onClick = {() => {
-                this.setState({display: true})
-                selectDealer(this.state.selected)
-            }}>Generate</button> */}
-
             {this.state.make === '' || this.state.selected === '' || this.state.page === '' ? 
             null :
             <button

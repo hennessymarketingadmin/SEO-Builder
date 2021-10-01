@@ -107,11 +107,12 @@ hr {
 .contentHeader {
     color: white;
     font-size: 50px;
+    margin: 0;
 }
 
-.contentHeader2 {
+/* .contentHeader2 {
     color: white;
-}
+} */
 /* _______________________________ */
 
 .dropdownContainer {
@@ -119,14 +120,11 @@ hr {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    /* border: 1px solid red; */
     margin-top: 20px;
     margin-bottom: 20px;
     width: 300px;
     height: 50px;
-
 }
-
 .dropdown {
     position: relative;
     display: inline-block;
@@ -135,8 +133,8 @@ hr {
     border-radius: 4px;
     cursor: pointer;
     margin-right: 5px;
+    width: 1000px;
 }
-
 .dropdown-content {
     display: none;
     position: absolute;
@@ -147,31 +145,25 @@ hr {
     z-index: 1;
     border-radius: 4px;
 }
-
 .dropdown:hover {
     border: 1px solid lightgray;
 }
-
 .dropdown:hover .dropdown-content {
 display: block;
 }
-
-
-
 .dropdownLeft {
     right: 0;
 }
-
 .dropdownRight {
     left: 0;
 }
-.coupon-button-link-123645565745-container {
+.contentHeaderButtonContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 500px;
 }
-.coupon-button-link-123645565745 {
+.contentHeaderButtons {
     color: #007FCB;
     background-color: white;
     border: 3px solid #007FCB;
@@ -183,6 +175,6 @@ display: block;
     min-width:25%;
     text-decoration:none;
 }
-.brakesHeaderparagraph {
+.contentHeaderParagraph {
     color: white;
 }
