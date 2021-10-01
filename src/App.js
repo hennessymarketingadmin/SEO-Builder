@@ -98,6 +98,69 @@ class App extends Component {
             this.setState({serviceCenter: 'https://www.lexusgwinnett.com/auto-repair-in-duluth.htm'})
             this.setState({serviceApp: 'https://www.lexusgwinnett.com/ServiceApptForm.htm'})
             this.setState({serviceSpecials: 'https://www.lexusgwinnett.com/parts-and-service/service-specials.htm'})
+        } else if (dealer === 'Land Rover Gwinnett') {
+            this.setState({dealer: 'Land Rover Gwinnett'})
+            this.setState({address: '3423 Old Norcross Rd, Duluth, GA 30096'})
+            this.setState({state: 'Georgia'})
+            this.setState({city: 'Duluth'})
+            this.setState({phone: '833-933-0115'})
+            this.setState({serviceCenter: 'https://www.landrovergwinnett.com/service-department.htm'})
+            this.setState({serviceApp: 'https://www.landrovergwinnett.com/service/schedule-appointment.htm'})
+            this.setState({serviceSpecials: 'https://www.landrovergwinnett.com/promotions/service/index.htm'})
+        } else if (dealer === 'Land Rover Buckhead') {
+            this.setState({dealer: 'Land Rover Buckhead'})
+            this.setState({address: '3040 Piedmont Rd NE, Atlanta, GA 30305'})
+            this.setState({state: 'Georgia'})
+            this.setState({city: 'Atlanta'})
+            this.setState({phone: '833-448-7479'})
+            this.setState({serviceCenter: 'https://www.landroverbuckhead.net/service-department.htm'})
+            this.setState({serviceApp: 'https://www.landroverbuckhead.net/service/schedule-appointment.htm'})
+            this.setState({serviceSpecials: 'https://www.landroverbuckhead.net/promotions/service/index.htm'})
+        } else if (dealer === 'Land Rover North Georgia') {
+            this.setState({dealer: 'Land Rover North Georgia'})
+            this.setState({address: '1505 Mansell Rd, Alpharetta, GA 30009'})
+            this.setState({state: 'Georgia'})
+            this.setState({city: 'Alpharetta'})
+            this.setState({phone: '833-986-0454'})
+            this.setState({serviceCenter: 'https://www.landrovernorthatlanta.com/service-department.htm'})
+            this.setState({serviceApp: 'https://www.landrovernorthatlanta.com/service/schedule-appointment.htm'})
+            this.setState({serviceSpecials: 'https://www.landrovernorthatlanta.com/promotions/service/index.htm'})
+        } else if (dealer === 'Ford') {
+            this.setState({dealer: 'Hennessy Ford Atlanta'})
+            this.setState({address: '5675 Peachtree Blvd, Atlanta, GA 30341'})
+            this.setState({state: 'Georgia'})
+            this.setState({city: 'Atlanta'})
+            this.setState({phone: '833-339-1890'})
+            this.setState({serviceCenter: 'https://www.hennessyford.com/service-center/'})
+            this.setState({serviceApp: 'https://www.hennessyford.com/service-appointment/'})
+            this.setState({serviceSpecials: 'https://www.hennessyford.com/service-coupons/'})
+        } else if (dealer === 'GMC') {
+            this.setState({dealer: 'Hennessy Buick GMC of Southlake'})
+            this.setState({address: '7261 JONESBORO RD, MORROW, GA 30260'})
+            this.setState({state: 'Georgia'})
+            this.setState({city: 'MORROW'})
+            this.setState({phone: '833-339-1943'})
+            this.setState({serviceCenter: 'https://www.hennessympg.com/service/'})
+            this.setState({serviceApp: 'https://www.hennessympg.com/service/serviceapptform/'})
+            this.setState({serviceSpecials: 'https://www.hennessympg.com/service/serviceandpartsspecials/'})
+        } else if (dealer === 'Buick') {
+            this.setState({dealer: 'Hennessy Buick GMC of Southlake'})
+            this.setState({address: '7261 JONESBORO RD, MORROW, GA 30260'})
+            this.setState({state: 'Georgia'})
+            this.setState({city: 'MORROW'})
+            this.setState({phone: '833-339-1943'})
+            this.setState({serviceCenter: 'https://www.hennessympg.com/service/'})
+            this.setState({serviceApp: 'https://www.hennessympg.com/service/serviceapptform/'})
+            this.setState({serviceSpecials: 'https://www.hennessympg.com/service/serviceandpartsspecials/'})
+        } else if (dealer === 'Cadillac') {
+            this.setState({dealer: 'Hennessy Buick GMC of Southlake'})
+            this.setState({address: '3377 Satellite Blvd, Duluth, GA 30096'})
+            this.setState({state: 'Georgia'})
+            this.setState({city: 'Duluth'})
+            this.setState({phone: '770-680-7000'})
+            this.setState({serviceCenter: 'https://www.hennessycadillac.com/service/'})
+            this.setState({serviceApp: 'https://www.hennessycadillac.com/service/serviceapptform/'})
+            this.setState({serviceSpecials: 'https://www.hennessycadillac.com/service/serviceandpartsspecials/'})
         }
     }
 
@@ -118,7 +181,19 @@ class App extends Component {
                 serviceSpecials={this.state.serviceSpecials}
             />
         } else if (page === 'Filter') {
-            return <FilterPage />
+            return <FilterPage 
+                make={this.state.make}
+                model={this.state.model}
+                year={this.state.year}
+                address={this.state.address}
+                state={this.state.state}
+                city={this.state.city}
+                dealer={this.state.dealer}
+                phone={this.state.phone}
+                serviceCenter={this.state.serviceCenter}
+                serviceApp={this.state.serviceApp}
+                serviceSpecials={this.state.serviceSpecials}
+            />
         } else if (page === 'Brakes') {
             return <BrakesPage 
                 make={this.state.make}
@@ -409,7 +484,7 @@ class App extends Component {
                 selectDealer(this.state.selected)
             }}>Generate</button> */}
 
-            {this.state.make === '' || this.state.model === '' || this.state.year === '' || this.state.selected === '' || this.state.page === '' ? 
+            {this.state.make === '' || this.state.selected === '' || this.state.page === '' ? 
             null :
             <button
             className='genBtn'
