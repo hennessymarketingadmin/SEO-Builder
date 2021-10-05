@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 
 class Schedule extends Component {
     
+    state = {
+        imageUrl: '',
+    }
+    
     render() {
         return (
             <div className='content'>
@@ -10,6 +14,15 @@ class Schedule extends Component {
             <p>Discription:</p>
             <p>{'Find great deals for your Scheduled Maintenance for your ' + this.props.year + ' ' + this.props.make + ' ' + this.props.model + ' at ' + this.props.dealer + ' located in ' + this.props.city + ' and metro area'}</p>
             <hr></hr>
+            <input 
+            className='imageInput' 
+            placeholder='Update image with url link'
+            onChange = {(event) => {
+                let text = event.target.value;
+                console.log(text)
+                this.setState({imageUrl: text})
+            }}
+            ></input>
             <div className='contentHeaderContainer'>
                 <h1 className='contentHeader'>{this.props.make + ' Scheduled Maintenance in ' + this.props.city}</h1>
                 <p className='contentHeaderParagraph'>Schedule your Scheduled Maintenance & Repair appointment online now!</p>
@@ -36,7 +49,7 @@ class Schedule extends Component {
 
             <p>{'<style>'}</p>
             <p>{'.contentHeaderContainer {'}</p>
-            <p>{'background-image: url(https://images.pexels.com/photos/2244746/pexels-photo-2244746.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);'}</p>
+            <p>{this.state.imageUrl === '' ? 'background-image: url(https://images.pexels.com/photos/2244746/pexels-photo-2244746.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);' : 'background-image: url(' + this.state.imageUrl + ');'}</p>
             <p>{'background-size: cover;'}</p>
             <p>{'height: 400px;'}</p> 
             <p>{'display: flex;'}</p>
