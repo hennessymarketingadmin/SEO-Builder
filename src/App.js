@@ -154,7 +154,7 @@ class App extends Component {
             this.setState({serviceApp: 'https://www.hennessympg.com/service/serviceapptform/'})
             this.setState({serviceSpecials: 'https://www.hennessympg.com/service/serviceandpartsspecials/'})
         } else if (dealer === 'Cadillac') {
-            this.setState({dealer: 'Hennessy Buick GMC of Southlake'})
+            this.setState({dealer: 'Hennessy Cadillac'})
             this.setState({address: '3377 Satellite Blvd, Duluth, GA 30096'})
             this.setState({state: 'Georgia'})
             // this.setState({city: 'Duluth'})
@@ -162,6 +162,30 @@ class App extends Component {
             this.setState({serviceCenter: 'https://www.hennessycadillac.com/service/'})
             this.setState({serviceApp: 'https://www.hennessycadillac.com/service/serviceapptform/'})
             this.setState({serviceSpecials: 'https://www.hennessycadillac.com/service/serviceandpartsspecials/'})
+        } else if (dealer === 'Jaguar Atlanta') {
+            this.setState({dealer: 'Hennessy Jaguar Atlanta'})
+            this.setState({address: '3040 Piedmont Rd NE, Atlanta, GA 30305'})
+            this.setState({state: 'Georgia'})
+            this.setState({phone: '833-536-8188'})
+            this.setState({serviceCenter: 'https://www.hennessyjaguaratlanta.com/service-department.htm'})
+            this.setState({serviceApp: 'https://www.hennessyjaguaratlanta.com/service/schedule-appointment.htm'})
+            this.setState({serviceSpecials: 'https://www.hennessyjaguaratlanta.com/promotions/service/index.htm'})
+        } else if (dealer === 'Jaguar North Atlanta') {
+            this.setState({dealer: 'Hennessy Jaguar North Atlanta'})
+            this.setState({address: '1505 Mansell Rd, Alpharetta, GA 30009'})
+            this.setState({state: 'Georgia'})
+            this.setState({phone: '833-985-0564'})
+            this.setState({serviceCenter: 'https://www.jaguarnorthatlanta.com/service-department.htm'})
+            this.setState({serviceApp: 'https://www.jaguarnorthatlanta.com/service/schedule-appointment.htm'})
+            this.setState({serviceSpecials: 'https://www.jaguarnorthatlanta.com/promotions/service/index.htm'})
+        } else if (dealer === 'Jaguar Gwinnett') {
+            this.setState({dealer: 'Hennessy Jaguar Gwinnett'})
+            this.setState({address: '3423 Old Norcross Rd, Duluth, GA 30096'})
+            this.setState({state: 'Georgia'})
+            this.setState({phone: '833-933-0118'})
+            this.setState({serviceCenter: 'https://www.jaguargwinnett.com/service-department.htm'})
+            this.setState({serviceApp: 'https://www.jaguargwinnett.com/service/schedule-appointment.htm'})
+            this.setState({serviceSpecials: 'https://www.jaguargwinnett.com/promotions/service/index.htm'})
         }
     }
 
@@ -411,9 +435,9 @@ class App extends Component {
                     <p onClick={()=>{this.setState({selected: 'Land Rover Gwinnett'})}}>Land Rover Gwinnett</p>
                     <p onClick={()=>{this.setState({selected: 'Land Rover Buckhead'})}}>Land Rover Buckhead</p>
                     <p onClick={()=>{this.setState({selected: 'Land Rover North Atlanta'})}}>Land Rover North Atlanta</p>
-                    <p onClick={()=>{this.setState({selected: 'Jaguar'})}}>Jaguar</p>
-                    <p onClick={()=>{this.setState({selected: 'Jaguar'})}}>Jaguar</p>
-                    <p onClick={()=>{this.setState({selected: 'Jaguar'})}}>Jaguar</p>
+                    <p onClick={()=>{this.setState({selected: 'Jaguar Atlanta'})}}>Jaguar Atlanta</p>
+                    <p onClick={()=>{this.setState({selected: 'Jaguar North Atlanta'})}}>Jaguar North Altanta</p>
+                    <p onClick={()=>{this.setState({selected: 'Jaguar Gwinnett'})}}>Jaguar Gwinnett</p>
                     <p onClick={()=>{this.setState({selected: 'Ford'})}}>Ford</p>
                     <p onClick={()=>{this.setState({selected: 'GMC'})}}>GMC</p>
                     <p onClick={()=>{this.setState({selected: 'Buick'})}}>Buick</p>

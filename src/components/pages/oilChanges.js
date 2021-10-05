@@ -191,7 +191,7 @@ class oilChanges extends Component {
                 'We also feature online scheduling, so you can come in at a time that works for your your busy schedule! ',
                 this.props.dealer + ' is proud to serve the greater ' + this.props.city + ' area. ',
                 'You can also view our current <a class=\'seoLinks\' href=\'' + this.props.serviceSpecials + '\' target="_blank">current service specials here</a> and schedule your ' + this.props.make + ' <a class=\'seoLinks\' href=\'' + this.props.serviceApp + '\' target="_blank">oil change appointment</a> directly from the coupon. ',
-                'If you have ' + generateAdverbSix() + ' vehicles you need serviced, definitely bring it to our dealership located at ' + this.props.address + ', ' + this.props.city + ', ' + this.props.state + '! ',
+                'If you have ' + generateAdverbSix() + ' vehicles you need serviced, definitely bring it to our dealership located at ' + this.props.address + '! ',
                 'Short on time? Let us help! Our auto mechanics are certified to work on any ' + this.props.make + ' . We look forward to looking you! ',
             ]
             return shuffle(arr)
