@@ -79,15 +79,22 @@
     margin-top: 5px;
     margin-bottom: 5px;
 }
-
 input:focus {
     outline: none;
 }
-
+.imageInput {
+    border-radius: 50px;
+    border-radius: 50px;
+    border-left: none;
+    border: 1px solid lightgrey;
+    height: 40px;
+    width: 400px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
 hr {
     border: 1px solid lightgray;
 }
-
 .seoLinks {
     color: black;
     font-weight: bold;
@@ -161,7 +168,7 @@ display: block;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 500px;
+    width: 800px;
 }
 .contentHeaderButtons {
     color: #007FCB;
@@ -174,6 +181,7 @@ display: block;
     padding:10px 40px;
     min-width:25%;
     text-decoration:none;
+    margin-right: 5px;
 }
 .contentHeaderParagraph {
     color: white;

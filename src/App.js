@@ -367,6 +367,24 @@ class App extends Component {
             }}
             ></input>
             </div>
+            <div className='inputContainer'>
+            <input
+            className='searchBarLeft'
+            placeholder='City'
+            onChange = {(event) => {
+                let text = event.target.value;
+                this.setState({make: uppercaseFirst(text)})
+            }}
+            ></input>
+            <input 
+            className='searchBarRight'
+            placeholder='Zipcode'
+            onChange = {(event) => {
+                let text = event.target.value;
+                this.setState({year: uppercaseFirst(text)})
+            }}
+            ></input>
+            </div>
             <div className='dropdownContainer'>
             <div className="dropdown">
                 <span>{this.state.selected === '' ? 'Dealers' : this.state.selected}</span>
