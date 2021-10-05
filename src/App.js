@@ -20,11 +20,12 @@ class App extends Component {
         selected: '',
         page: '',
         make: '',
+        city: '',
+        zip: '',
         model: '',
         year: '',
         address: '',
         state: '',
-        city: '',
         dealer: '',
         phone: '',
         serviceCenter: '',
@@ -46,9 +47,9 @@ class App extends Component {
     const selectDealer = (dealer) => {
         if (dealer === 'Honda') {
             this.setState({dealer: 'Hennessy Honda'})
-            this.setState({address: '8931 Highway 92Woodstock, GA 30189'})
+            this.setState({address: '8931 Highway 92 Woodstock, GA 30189'})
             this.setState({state: 'Georgia'})
-            this.setState({city: 'Marietta'})
+            // this.setState({city: 'Marietta'})
             this.setState({phone: '770-628-1155'})
             this.setState({serviceCenter: 'https://www.hennessyhonda.com/service/index.htm'})
             this.setState({serviceApp: 'https://www.hennessyhonda.com/schedule-a-service-appointment.htm'})
@@ -57,7 +58,7 @@ class App extends Component {
             this.setState({dealer: 'Hennessy Porsche North Atlanta'})
             this.setState({address: '990 Mansell Rd, Roswell, GA 30076'})
             this.setState({state: 'Georgia'})
-            this.setState({city: 'Roswell'})
+            // this.setState({city: 'Roswell'})
             this.setState({phone: '770-643-6100'})
             this.setState({serviceCenter: 'https://www.hennessyporsche.com/service/index.htm'})
             this.setState({serviceApp: 'https://www.hennessyporsche.com/schedule_service.htm'})
@@ -66,7 +67,7 @@ class App extends Component {
             this.setState({dealer: 'Hennessy Mazda'})
             this.setState({address: '7261 Jonesboro Road, Bld. 2, Morrow, GA 30260'})
             this.setState({state: 'Georgia'})
-            this.setState({city: 'Morrow'})
+            // this.setState({city: 'Morrow'})
             this.setState({phone: '833-339-1886'})
             this.setState({serviceCenter: 'https://www.hennessy-mazda.com/service/'})
             this.setState({serviceApp: 'https://www.hennessy-mazda.com/schedule-service/'})
@@ -75,7 +76,7 @@ class App extends Component {
             this.setState({dealer: 'Hennessy Lincoln Atlanta'})
             this.setState({address: '5675 Peachtree Industrial Boulevard Atlanta, GA 30341'})
             this.setState({state: 'Georgia'})
-            this.setState({city: 'Atlanta'})
+            // this.setState({city: 'Atlanta'})
             this.setState({phone: '770-621-0200'})
             this.setState({serviceCenter: 'https://www.hennessylincolnatlanta.com/lincoln-priority-service-at-hennessy-lincoln-atlanta.htm'})
             this.setState({serviceApp: 'https://www.hennessylincolnatlanta.com/schedule-service.htm'})
@@ -84,7 +85,7 @@ class App extends Component {
             this.setState({dealer: 'Hennessy Lexus of Atlanta'})
             this.setState({address: '5955 Peachtree Industrial Blvd.Atlanta, GA 30341'})
             this.setState({state: 'Georgia'})
-            this.setState({city: 'Atlanta'})
+            // this.setState({city: 'Atlanta'})
             this.setState({phone: '678-292-5640'})
             this.setState({serviceCenter: 'https://www.lexusatlanta.com/auto-repair-in-atlanta.htm'})
             this.setState({serviceApp: 'https://www.lexusatlanta.com/ServiceApptForm.htm'})
@@ -93,7 +94,7 @@ class App extends Component {
             this.setState({dealer: 'Hennessy Lexus of Gwinnett'})
             this.setState({address: '3383 Satellite Blvd, Duluth, GA 30096'})
             this.setState({state: 'Georgia'})
-            this.setState({city: 'Duluth'})
+            // this.setState({city: 'Duluth'})
             this.setState({phone: '770-680-1000'})
             this.setState({serviceCenter: 'https://www.lexusgwinnett.com/auto-repair-in-duluth.htm'})
             this.setState({serviceApp: 'https://www.lexusgwinnett.com/ServiceApptForm.htm'})
@@ -102,7 +103,7 @@ class App extends Component {
             this.setState({dealer: 'Land Rover Gwinnett'})
             this.setState({address: '3423 Old Norcross Rd, Duluth, GA 30096'})
             this.setState({state: 'Georgia'})
-            this.setState({city: 'Duluth'})
+            // this.setState({city: 'Duluth'})
             this.setState({phone: '833-933-0115'})
             this.setState({serviceCenter: 'https://www.landrovergwinnett.com/service-department.htm'})
             this.setState({serviceApp: 'https://www.landrovergwinnett.com/service/schedule-appointment.htm'})
@@ -111,7 +112,7 @@ class App extends Component {
             this.setState({dealer: 'Land Rover Buckhead'})
             this.setState({address: '3040 Piedmont Rd NE, Atlanta, GA 30305'})
             this.setState({state: 'Georgia'})
-            this.setState({city: 'Atlanta'})
+            // this.setState({city: 'Atlanta'})
             this.setState({phone: '833-448-7479'})
             this.setState({serviceCenter: 'https://www.landroverbuckhead.net/service-department.htm'})
             this.setState({serviceApp: 'https://www.landroverbuckhead.net/service/schedule-appointment.htm'})
@@ -120,7 +121,7 @@ class App extends Component {
             this.setState({dealer: 'Land Rover North Georgia'})
             this.setState({address: '1505 Mansell Rd, Alpharetta, GA 30009'})
             this.setState({state: 'Georgia'})
-            this.setState({city: 'Alpharetta'})
+            // this.setState({city: 'Alpharetta'})
             this.setState({phone: '833-986-0454'})
             this.setState({serviceCenter: 'https://www.landrovernorthatlanta.com/service-department.htm'})
             this.setState({serviceApp: 'https://www.landrovernorthatlanta.com/service/schedule-appointment.htm'})
@@ -129,25 +130,25 @@ class App extends Component {
             this.setState({dealer: 'Hennessy Ford Atlanta'})
             this.setState({address: '5675 Peachtree Blvd, Atlanta, GA 30341'})
             this.setState({state: 'Georgia'})
-            this.setState({city: 'Atlanta'})
+            // this.setState({city: 'Atlanta'})
             this.setState({phone: '833-339-1890'})
             this.setState({serviceCenter: 'https://www.hennessyford.com/service-center/'})
             this.setState({serviceApp: 'https://www.hennessyford.com/service-appointment/'})
             this.setState({serviceSpecials: 'https://www.hennessyford.com/service-coupons/'})
         } else if (dealer === 'GMC') {
             this.setState({dealer: 'Hennessy Buick GMC of Southlake'})
-            this.setState({address: '7261 JONESBORO RD, MORROW, GA 30260'})
+            this.setState({address: '7261 Jonesboro RD, Morrow, GA 30260'})
             this.setState({state: 'Georgia'})
-            this.setState({city: 'MORROW'})
+            // this.setState({city: 'MORROW'})
             this.setState({phone: '833-339-1943'})
             this.setState({serviceCenter: 'https://www.hennessympg.com/service/'})
             this.setState({serviceApp: 'https://www.hennessympg.com/service/serviceapptform/'})
             this.setState({serviceSpecials: 'https://www.hennessympg.com/service/serviceandpartsspecials/'})
         } else if (dealer === 'Buick') {
             this.setState({dealer: 'Hennessy Buick GMC of Southlake'})
-            this.setState({address: '7261 JONESBORO RD, MORROW, GA 30260'})
+            this.setState({address: '7261 Jonesboro RD, Morrow, GA 30260'})
             this.setState({state: 'Georgia'})
-            this.setState({city: 'MORROW'})
+            // this.setState({city: 'MORROW'})
             this.setState({phone: '833-339-1943'})
             this.setState({serviceCenter: 'https://www.hennessympg.com/service/'})
             this.setState({serviceApp: 'https://www.hennessympg.com/service/serviceapptform/'})
@@ -156,7 +157,7 @@ class App extends Component {
             this.setState({dealer: 'Hennessy Buick GMC of Southlake'})
             this.setState({address: '3377 Satellite Blvd, Duluth, GA 30096'})
             this.setState({state: 'Georgia'})
-            this.setState({city: 'Duluth'})
+            // this.setState({city: 'Duluth'})
             this.setState({phone: '770-680-7000'})
             this.setState({serviceCenter: 'https://www.hennessycadillac.com/service/'})
             this.setState({serviceApp: 'https://www.hennessycadillac.com/service/serviceapptform/'})
@@ -171,9 +172,10 @@ class App extends Component {
                 make={this.state.make}
                 model={this.state.model}
                 year={this.state.year}
+                city={this.state.city}
+                zip={this.state.zip}
                 address={this.state.address}
                 state={this.state.state}
-                city={this.state.city}
                 dealer={this.state.dealer}
                 phone={this.state.phone}
                 serviceCenter={this.state.serviceCenter}
@@ -185,9 +187,10 @@ class App extends Component {
                 make={this.state.make}
                 model={this.state.model}
                 year={this.state.year}
+                city={this.state.city}
+                zip={this.state.zip}
                 address={this.state.address}
                 state={this.state.state}
-                city={this.state.city}
                 dealer={this.state.dealer}
                 phone={this.state.phone}
                 serviceCenter={this.state.serviceCenter}
@@ -199,9 +202,10 @@ class App extends Component {
                 make={this.state.make}
                 model={this.state.model}
                 year={this.state.year}
+                city={this.state.city}
+                zip={this.state.zip}
                 address={this.state.address}
                 state={this.state.state}
-                city={this.state.city}
                 dealer={this.state.dealer}
                 phone={this.state.phone}
                 serviceCenter={this.state.serviceCenter}
@@ -213,9 +217,10 @@ class App extends Component {
                 make={this.state.make}
                 model={this.state.model}
                 year={this.state.year}
+                city={this.state.city}
+                zip={this.state.zip}
                 address={this.state.address}
                 state={this.state.state}
-                city={this.state.city}
                 dealer={this.state.dealer}
                 phone={this.state.phone}
                 serviceCenter={this.state.serviceCenter}
@@ -227,9 +232,10 @@ class App extends Component {
                 make={this.state.make}
                 model={this.state.model}
                 year={this.state.year}
+                city={this.state.city}
+                zip={this.state.zip}
                 address={this.state.address}
                 state={this.state.state}
-                city={this.state.city}
                 dealer={this.state.dealer}
                 phone={this.state.phone}
                 serviceCenter={this.state.serviceCenter}
@@ -241,9 +247,10 @@ class App extends Component {
                 make={this.state.make}
                 model={this.state.model}
                 year={this.state.year}
+                city={this.state.city}
+                zip={this.state.zip}
                 address={this.state.address}
                 state={this.state.state}
-                city={this.state.city}
                 dealer={this.state.dealer}
                 phone={this.state.phone}
                 serviceCenter={this.state.serviceCenter}
@@ -255,9 +262,10 @@ class App extends Component {
                 make={this.state.make}
                 model={this.state.model}
                 year={this.state.year}
+                city={this.state.city}
+                zip={this.state.zip}
                 address={this.state.address}
                 state={this.state.state}
-                city={this.state.city}
                 dealer={this.state.dealer}
                 phone={this.state.phone}
                 serviceCenter={this.state.serviceCenter}
@@ -269,9 +277,10 @@ class App extends Component {
                 make={this.state.make}
                 model={this.state.model}
                 year={this.state.year}
+                city={this.state.city}
+                zip={this.state.zip}
                 address={this.state.address}
                 state={this.state.state}
-                city={this.state.city}
                 dealer={this.state.dealer}
                 phone={this.state.phone}
                 serviceCenter={this.state.serviceCenter}
@@ -283,9 +292,10 @@ class App extends Component {
                 make={this.state.make}
                 model={this.state.model}
                 year={this.state.year}
+                city={this.state.city}
+                zip={this.state.zip}
                 address={this.state.address}
                 state={this.state.state}
-                city={this.state.city}
                 dealer={this.state.dealer}
                 phone={this.state.phone}
                 serviceCenter={this.state.serviceCenter}
@@ -297,9 +307,10 @@ class App extends Component {
                 make={this.state.make}
                 model={this.state.model}
                 year={this.state.year}
+                city={this.state.city}
+                zip={this.state.zip}
                 address={this.state.address}
                 state={this.state.state}
-                city={this.state.city}
                 dealer={this.state.dealer}
                 phone={this.state.phone}
                 serviceCenter={this.state.serviceCenter}
@@ -311,9 +322,10 @@ class App extends Component {
                 make={this.state.make}
                 model={this.state.model}
                 year={this.state.year}
+                city={this.state.city}
+                zip={this.state.zip}
                 address={this.state.address}
                 state={this.state.state}
-                city={this.state.city}
                 dealer={this.state.dealer}
                 phone={this.state.phone}
                 serviceCenter={this.state.serviceCenter}
@@ -325,9 +337,10 @@ class App extends Component {
                 make={this.state.make}
                 model={this.state.model}
                 year={this.state.year}
+                city={this.state.city}
+                zip={this.state.zip}
                 address={this.state.address}
                 state={this.state.state}
-                city={this.state.city}
                 dealer={this.state.dealer}
                 phone={this.state.phone}
                 serviceCenter={this.state.serviceCenter}
@@ -373,7 +386,7 @@ class App extends Component {
             placeholder='City'
             onChange = {(event) => {
                 let text = event.target.value;
-                this.setState({make: uppercaseFirst(text)})
+                this.setState({city: uppercaseFirst(text)})
             }}
             ></input>
             <input 
@@ -381,7 +394,7 @@ class App extends Component {
             placeholder='Zipcode'
             onChange = {(event) => {
                 let text = event.target.value;
-                this.setState({year: uppercaseFirst(text)})
+                this.setState({zip: uppercaseFirst(text)})
             }}
             ></input>
             </div>
