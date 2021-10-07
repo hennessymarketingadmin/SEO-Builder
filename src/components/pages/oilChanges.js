@@ -955,7 +955,7 @@ class oilChanges extends Component {
         }
 
         const generateSectionTwelve = () => {
-            let paragraphs = [generateSectionTwelveParagraphOne(), generateSectionTwelveParagraphTwo(), generateSectionTwelveParagraphThree(), generateSectionTwelveParagraphFour()];
+            let paragraphs = [generateSectionTwelveParagraphOne(), generateSectionTwelveParagraphTwo(), generateSectionTwelveParagraphThree(), generateSectionTwelveParagraphFour(), generateSectionTwelveParagraphFive()];
             return suffleParagraphs(paragraphs)
         }
 
@@ -1014,43 +1014,43 @@ class oilChanges extends Component {
             <p>{'</div>'}</p>
             <p>{'</div>'}</p>
             
-            <h1>{'<h1>Why Do Cars Need An oil change? | Oil Change Service in ' + this.props.city + '</h1>'}</h1>
+            <h2>{'<h2>Why Do Cars Need An oil change? | Oil Change Service in ' + this.props.city + '</h2>'}</h2>
             {generateSectionOne()}
-            <h1>{'<h1>What is Synthetic-Blend Oil? </h1>'}</h1>
+            <h2>{'<h2>What is Synthetic-Blend Oil? </h2>'}</h2>
             {generateSectionTwo()}
-            <p>{'Synthetic blend ' + generateAdverbSeven() + ' oil combines the advanced properties of standard ' + generateAdverbSeven() + ' oil and fully synthetic oil.'}</p>
-            <h1>{'<h1>What is the Difference between Synthetic Blend Oil vs Full Synthetic Oil? </h1>'}</h1>
+            <p>{'<p>Synthetic blend ' + generateAdverbSeven() + ' oil combines the advanced properties of standard ' + generateAdverbSeven() + ' oil and fully synthetic oil.</p>'}</p>
+            <h2>{'<h2>What is The Difference Between Synthetic Blend Oil vs Full Synthetic Oil? </h2>'}</h2>
             {generateSectionThree()}
-            <h1>{'<h1>How often does a ' + this.props.make + ' need an Oil Change?</h1>'}</h1>
+            <h2>{'<h2>How Often Does a ' + this.props.make + ' Need an Oil Change?</h2>'}</h2>
             {generateSectionFour()}
-            <h1>{'<h1>Full Synthetic Oil Change</h1>'}</h1>
+            <h2>{'<h2>Full Synthetic Oil Change</h2>'}</h2>
             {generateSectionFive()}
-            <h1>{'<h1>Conventional Motor Oil | Conventional Oil Change Benefits</h1>'}</h1>
+            <h2>{'<h2>Conventional Motor Oil | Conventional Oil Change Benefits</h2>'}</h2>
             {generateSectionSix()}
-            <h1>{'<h1>High Mileage Motor Oil | High Mileage oil change Benefits </h1>'}</h1>
+            <h2>{'<h2>High Mileage Motor Oil | High Mileage oil change Benefits </h2>'}</h2>
             {generateSectionSeven()}
-            <h1>{'<h1>How much oil does a ' + this.props.make + ' take?</h1>'}</h1>
+            <h2>{'<h2>How Much Oil Does a ' + this.props.make + ' Take?</h2>'}</h2>
             {generateSectionEight()}
-            <h1>{'<h1>What Occurs if you don\'t change the oil in your ' + this.props.make + '?</h1>'}</h1>
+            <h2>{'<h2>What Occurs If You Don\'t Change The Oil In Your ' + this.props.make + '?</h2>'}</h2>
             <p>{'<p>Motor oil has innumerable ' + generateAdverbSix() + ' functions & benefits, which include:</p>'}</p>
             <ul>
                 {'<ul>'}
                 {generateSectionNine()}
                 {'</ul>'}
             </ul>            
-            <h1>{'<h1>How Much Does an Oil Change Cost for a ' + this.props.make + '?</h1>'}</h1>
+            <h2>{'<h2>How Much Does An Oil Change Cost For a ' + this.props.make + '?</h2>'}</h2>
             {generateSectionTen()}
-            <h1>{'<h1>' + this.props.make + ' Oil Change Near Me | Oil Change Coupons ' + this.props.city + ', ' + this.props.state + '</h1>'}</h1>            
+            <h2>{'<h2>' + this.props.make + ' Oil Change Near Me | Oil Change Coupons ' + this.props.city + ', ' + this.props.state + '</h2>'}</h2>            
             {generateSectionEleven()}
-            <h1>{'<h1>Can you mix Conventional Oil & Synthetic Motor Oil?</h1>'}</h1>            
+            <h2>{'<h2>Can You Mix Conventional Oil & Synthetic Motor Oil?</h2>'}</h2>            
             {generateSectionTwelve()}
-            <h1>{'<h1>What Type of Oil does a ' + this.props.make + ' use? | What Oil Does ' + this.props.make + ' Need? | Types of Motor Oil</h1>'}</h1>
+            <h2>{'<h2>What Type Of Oil Does a ' + this.props.make + ' Use? | What Oil Does ' + this.props.make + ' Need? | Types of Motor Oil</h2>'}</h2>
             {generateSectionThirdteen()}
-            <h1>{'<h1>Best ' + this.props.city + ' High Mileage oil change | Why Use High Mileage Oil?</h1>'}</h1>
+            <h2>{'<h2>Best ' + this.props.city + ' High Mileage Oil Change | Why Use High Mileage Oil?</h2>'}</h2>
             {generateSectionFourteen()}
-            <h1>{'<h1>' + this.props.make + ' oil change Price at ' + this.props.dealer + '</h1>'}</h1>
+            <h2>{'<h2>' + this.props.make + ' Oil Change Price at ' + this.props.dealer + '</h2>'}</h2>
             {generateSectionFifteen()}
-            <h1>{'<h1>Why is Full Synthetic Motor Oil So Expensive? What are the Benefits of Synthetic Oil Changes?</h1>'}</h1>
+            <h2>{'<h2>Why Is Full Synthetic Motor Oil So Expensive? What Are The Benefits Of Synthetic Oil Changes?</h2>'}</h2>
             {generateSectionSixteen()}
 
             <hr></hr>
@@ -1065,21 +1065,33 @@ class oilChanges extends Component {
             <p>{'justify-content: center;'}</p>
             <p>{'align-items: center;'}</p>
             <p>{'}'}</p>
+
             <p>{'.contentHeader { '}</p>
             <p>{'color: white;'}</p>
             <p>{'font-size: 50px;'}</p>
             <p>{'margin: 0;'}</p>
             <p>{'}'}</p> 
+
             <p>{'.contentHeaderButtonContainer {'}</p>
             <p>{'display: flex;'}</p>
             <p>{'flex-direction: row;'}</p>
             <p>{'justify-content: space-between;'}</p>
-            <p>{'width: 500px;'}</p>
+            <p>{'align-items: center;'}</p>
+            <p>{'width: 450px;'}</p>
+            <p>{'font-weight: bold;'}</p>
+            <p>{'text-transform: uppercase;'}</p>
+            <p>{'color: white;'}</p>
+            <p>{'font-family: sans-serif;'}</p>
+            <p>{'font-size: 30px;'}</p>
+            <p>{'padding: 10px;'}</p>
+            <p>{'text-align: center;'}</p>
+            <p>{'float: left;'}</p>
             <p>{'}'}</p>
+
             <p>{'.contentHeaderButtons {'}</p>
             <p>{'color: #007FCB;'}</p>
-            <p>{'background-color: white;'}</p>
-            <p>{'border: 3px solid #007FCB;'}</p>
+            <p>{'background-color: #fff;'}</p>
+            <p>{'border: 3px solid #00324F;'}</p>
             <p>{'border-radius: 16px;'}</p>
             <p>{'font-size: 15px;'}</p>
             <p>{'cursor: pointer;'}</p>
@@ -1087,15 +1099,31 @@ class oilChanges extends Component {
             <p>{'padding: 10px 40px;'}</p>
             <p>{'min-width: 25%;'}</p>
             <p>{'text-decoration: none;'}</p>
+            <p>{'box-sizing: border-box;'}</p>
+            <p>{'transition: all 500ms ease;'}</p>
             <p>{'}'}</p>
+
+            <p>{'.contentHeaderButtons:hover {'}</p>
+            <p>{'color: #FFFFFF;'}</p>
+            <p>{'border: #FFFFFF solid 3px;'}</p>
+            <p>{'background:#007FCB;'}</p>
+            <p>{'}'}</p>
+
             <p>{'.contentHeaderParagraph {'}</p>
             <p>{'color: white;'}</p>
+            <p>{'margin:0px;'}</p>
+            <p>{'font-size:16px;'}</p>
+            <p>{'text-transform:none;'}</p>
+            <p>{'font-weight:300;'}</p>
+            <p>{'padding:18px;'}</p>
             <p>{'}'}</p>
+
             <p>{'.seoLinks {'}</p>
             <p>{'color: black;'}</p>
             <p>{'font-weight: bold;'}</p>
             <p>{'text-decoration: none;'}</p>
             <p>{'}'}</p>
+
             <p>{'@media screen and (min-width: 300px) and (max-width: 400px) {'}</p>
             <p>{'.contentHeaderContainer{'}</p>
             <p>{'height: 200px;'}</p>
