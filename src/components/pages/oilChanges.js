@@ -27,6 +27,12 @@ class oilChanges extends Component {
             return words[index]
         }
 
+        const suffleParagraphs = (p) => {
+            let length = p.length
+            let index = Math.floor(Math.random() * length)
+            return p[index]
+        }
+
         // const generateAdverbOne = () => {
         //     let words = ['dangerous', 'risky', 'perilous', 'unsafe', 'sensitive', 'hazardous', 'delicate']
         //     return shuffleAdverb(words)
@@ -897,6 +903,83 @@ class oilChanges extends Component {
             return shuffle(arr)
         }
 
+        const generateSectionOne = () => {
+            let paragraphs = [generateSectionOneParagraphOne(), generateSectionOneParagraphTwo(), generateSectionOneParagraphThree(), generateSectionOneParagraphFour()];
+            return suffleParagraphs(paragraphs)
+        }
+        const generateSectionTwo = () => {
+            let paragraphs = [generateSectionTwoParagraphOne(), generateSectionTwoParagraphTwo(), generateSectionTwoParagraphThree()];
+            return suffleParagraphs(paragraphs)
+        }
+
+        const generateSectionThree = () => {
+            let paragraphs = [generateSectionThreeParagraphOne(), generateSectionThreeParagraphTwo(), generateSectionThreeParagraphThree(), generateSectionThreeParagraphFour()];
+            return suffleParagraphs(paragraphs)
+        }
+        const generateSectionFour = () => {
+            let paragraphs = [generateSectionFourParagraphOne(), generateSectionFourParagraphTwo(), generateSectionFourParagraphThree(), generateSectionFourParagraphFour()];
+            return suffleParagraphs(paragraphs)
+        }
+        const generateSectionFive = () => {
+            let paragraphs = [generateSectionFiveParagraphOne(), generateSectionFiveParagraphTwo(), generateSectionFiveParagraphThree(), generateSectionFiveParagraphFour()];
+            return suffleParagraphs(paragraphs)
+        }
+        const generateSectionSix = () => {
+            let paragraphs = [generateSectionSixParagraphOne(), generateSectionSixParagraphTwo(), generateSectionSixParagraphThree(), generateSectionSixParagraphFour()];
+            return suffleParagraphs(paragraphs)
+        }
+
+        const generateSectionSeven = () => {
+            let paragraphs = [generateSectionSevenParagraphOne(), generateSectionSevenParagraphTwo(), generateSectionSevenParagraphThree(), generateSectionSevenParagraphFour()];
+            return suffleParagraphs(paragraphs)
+        }
+
+        const generateSectionEight = () => {
+            let paragraphs = [generateSectionEightParagraphOne(), generateSectionEightParagraphTwo(), generateSectionEightParagraphThree(), generateSectionEightParagraphFour()];
+            return suffleParagraphs(paragraphs)
+        }
+
+        const generateSectionNine = () => {
+            let paragraphs = [generateSectionNineParagraphOne(), generateSectionNineParagraphTwo(), generateSectionNineParagraphThree(), generateSectionNineParagraphFour()];
+            return suffleParagraphs(paragraphs)
+        }
+
+        const generateSectionTen = () => {
+            let paragraphs = [generateSectionTenParagraphOne(), generateSectionTenParagraphTwo(), generateSectionTenParagraphThree(), generateSectionTenParagraphFour()];
+            return suffleParagraphs(paragraphs)
+        }
+
+        const generateSectionEleven = () => {
+            let paragraphs = [generateSectionElevenParagraphOne(), generateSectionElevenParagraphTwo(), generateSectionElevenParagraphThree(), generateSectionElevenParagraphFour()];
+            return suffleParagraphs(paragraphs)
+        }
+
+        const generateSectionTwelve = () => {
+            let paragraphs = [generateSectionTwelveParagraphOne(), generateSectionTwelveParagraphTwo(), generateSectionTwelveParagraphThree(), generateSectionTwelveParagraphFour()];
+            return suffleParagraphs(paragraphs)
+        }
+
+        const generateSectionThirdteen = () => {
+            let paragraphs = [generateSectionThirdteenParagraphOne(), generateSectionThirdteenParagraphTwo(), generateSectionThirdteenParagraphThree(), generateSectionThirdteenParagraphFour()];
+            return suffleParagraphs(paragraphs)
+        }
+
+        const generateSectionFourteen = () => {
+            let paragraphs = [generateSectionFourteenParagraphOne(), generateSectionFourteenParagraphTwo(), generateSectionFourteenParagraphThree(), generateSectionFourteenParagraphFour()];
+            return suffleParagraphs(paragraphs)
+        }
+
+        const generateSectionFifteen = () => {
+            let paragraphs = [generateSectionFifteenParagraphOne(), generateSectionFifteenParagraphTwo(), generateSectionFifteenParagraphThree(), generateSectionFifteenParagraphFour()];
+            return suffleParagraphs(paragraphs)
+        }
+
+        const generateSectionSixteen = () => {
+            let paragraphs = [generateSectionSixteenParagraphOne(), generateSectionSixteenParagraphTwo(), generateSectionSixteenParagraphThree(), generateSectionSixteenParagraphFour()];
+            return suffleParagraphs(paragraphs)
+        }
+
+
         return (
             <div className='content'>
             <hr></hr>
@@ -932,106 +1015,43 @@ class oilChanges extends Component {
             <p>{'</div>'}</p>
             
             <h1>{'<h1>Why Do Cars Need An oil change? | Oil Change Service in ' + this.props.city + '</h1>'}</h1>
-            <p>{generateSectionOneParagraphOne()}</p>
-            <p>{generateSectionOneParagraphTwo()}</p>
-            <p>{generateSectionOneParagraphThree()}</p>
-            <p>{generateSectionOneParagraphFour()}</p>
+            {generateSectionOne()}
             <h1>{'<h1>What is Synthetic-Blend Oil? </h1>'}</h1>
-            <p>{generateSectionTwoParagraphOne()}</p>
-            <p>{generateSectionTwoParagraphTwo()}</p>
-            <p>{generateSectionTwoParagraphThree()}</p>
+            {generateSectionTwo()}
             <p>{'Synthetic blend ' + generateAdverbSeven() + ' oil combines the advanced properties of standard ' + generateAdverbSeven() + ' oil and fully synthetic oil.'}</p>
             <h1>{'<h1>What is the Difference between Synthetic Blend Oil vs Full Synthetic Oil? </h1>'}</h1>
-            <p>{generateSectionThreeParagraphOne()}</p>
-            <p>{generateSectionThreeParagraphTwo()}</p>
-            <p>{generateSectionThreeParagraphThree()}</p>
-            <p>{generateSectionThreeParagraphFour()}</p>
+            {generateSectionThree()}
             <h1>{'<h1>How often does a ' + this.props.make + ' need an Oil Change?</h1>'}</h1>
-            <p>{generateSectionFourParagraphOne()}</p>
-            <p>{generateSectionFourParagraphTwo()}</p>
-            <p>{generateSectionFourParagraphThree()}</p>
-            <p>{generateSectionFourParagraphFour()}</p>
+            {generateSectionFour()}
             <h1>{'<h1>Full Synthetic Oil Change</h1>'}</h1>
-            <p>{generateSectionFiveParagraphOne()}</p>
-            <p>{generateSectionFiveParagraphTwo()}</p>
-            <p>{generateSectionFiveParagraphThree()}</p>
-            <p>{generateSectionFiveParagraphFour()}</p>
+            {generateSectionFive()}
             <h1>{'<h1>Conventional Motor Oil | Conventional Oil Change Benefits</h1>'}</h1>
-            <p>{generateSectionSixParagraphOne()}</p>
-            <p>{generateSectionSixParagraphTwo()}</p>
-            <p>{generateSectionSixParagraphThree()}</p>
-            <p>{generateSectionSixParagraphFour()}</p>
+            {generateSectionSix()}
             <h1>{'<h1>High Mileage Motor Oil | High Mileage oil change Benefits </h1>'}</h1>
-            <p>{generateSectionSevenParagraphOne()}</p>
-            <p>{generateSectionSevenParagraphTwo()}</p>
-            <p>{generateSectionSevenParagraphThree()}</p>
-            <p>{generateSectionSevenParagraphFour()}</p>
+            {generateSectionSeven()}
             <h1>{'<h1>How much oil does a ' + this.props.make + ' take?</h1>'}</h1>
-            <p>{generateSectionEightParagraphOne()}</p>
-            <p>{generateSectionEightParagraphTwo()}</p>
-            <p>{generateSectionEightParagraphThree()}</p>
-            <p>{generateSectionEightParagraphFour()}</p>
-            <p>{generateSectionTwelveParagraphFive()}</p>
+            {generateSectionEight()}
             <h1>{'<h1>What Occurs if you don\'t change the oil in your ' + this.props.make + '?</h1>'}</h1>
             <p>{'<p>Motor oil has innumerable ' + generateAdverbSix() + ' functions & benefits, which include:</p>'}</p>
             <ul>
                 {'<ul>'}
-                {generateSectionNineParagraphOne()}
+                {generateSectionNine()}
                 {'</ul>'}
-            </ul>
-            <p>{'<p>' + generateAdverbSeven() + ' oil has infinite ' + generateAdverbSix() + ' functions & ' + generateAdverbFour() + ', which include:</p>'}</p>
-            <ul>
-                {'<ul>'}
-                {generateSectionNineParagraphTwo()}
-                {'</ul>'}
-            </ul>
-            <p>{'<p>Engine oil has a multitude of additional properties and ' + generateAdverbFour() + ', including:</p>'}</p>
-            <ul>
-                {'<ul>'}
-                {generateSectionNineParagraphThree()}
-                {'</ul>'}
-            </ul>
-            <p>{'<p>Engine oil has a host of additional properties and ' + generateAdverbFour() + ', including:</p>'}</p>
-            <ul>
-                {'<ul>'}
-                {generateSectionNineParagraphFour()}
-                {'</ul>'}
-            </ul>
+            </ul>            
             <h1>{'<h1>How Much Does an Oil Change Cost for a ' + this.props.make + '?</h1>'}</h1>
-            <p>{generateSectionTenParagraphOne()}</p>
-            <p>{generateSectionTenParagraphTwo()}</p>
-            <p>{generateSectionTenParagraphThree()}</p>
-            <p>{generateSectionTenParagraphFour()}</p>
+            {generateSectionTen()}
             <h1>{'<h1>' + this.props.make + ' Oil Change Near Me | Oil Change Coupons ' + this.props.city + ', ' + this.props.state + '</h1>'}</h1>            
-            <p>{generateSectionElevenParagraphOne()}</p>
-            <p>{generateSectionElevenParagraphTwo()}</p>
-            <p>{generateSectionElevenParagraphThree()}</p>
-            <p>{generateSectionElevenParagraphFour()}</p>
+            {generateSectionEleven()}
             <h1>{'<h1>Can you mix Conventional Oil & Synthetic Motor Oil?</h1>'}</h1>            
-            <p>{generateSectionTwelveParagraphOne()}</p>
-            <p>{generateSectionTwelveParagraphTwo()}</p>
-            <p>{generateSectionTwelveParagraphThree()}</p>
-            <p>{generateSectionTwelveParagraphFour()}</p>
+            {generateSectionTwelve()}
             <h1>{'<h1>What Type of Oil does a ' + this.props.make + ' use? | What Oil Does ' + this.props.make + ' Need? | Types of Motor Oil</h1>'}</h1>
-            <p>{generateSectionThirdteenParagraphOne()}</p>
-            <p>{generateSectionThirdteenParagraphTwo()}</p>
-            <p>{generateSectionThirdteenParagraphThree()}</p>
-            <p>{generateSectionThirdteenParagraphFour()}</p>
+            {generateSectionThirdteen()}
             <h1>{'<h1>Best ' + this.props.city + ' High Mileage oil change | Why Use High Mileage Oil?</h1>'}</h1>
-            <p>{generateSectionFourteenParagraphOne()}</p>
-            <p>{generateSectionFourteenParagraphTwo()}</p>
-            <p>{generateSectionFourteenParagraphThree()}</p>
-            <p>{generateSectionFourteenParagraphFour()}</p>
+            {generateSectionFourteen()}
             <h1>{'<h1>' + this.props.make + ' oil change Price at ' + this.props.dealer + '</h1>'}</h1>
-            <p>{generateSectionFifteenParagraphOne()}</p>
-            <p>{generateSectionFifteenParagraphTwo()}</p>
-            <p>{generateSectionFifteenParagraphThree()}</p>
-            <p>{generateSectionFifteenParagraphFour()}</p>
+            {generateSectionFifteen()}
             <h1>{'<h1>Why is Full Synthetic Motor Oil So Expensive? What are the Benefits of Synthetic Oil Changes?</h1>'}</h1>
-            <p>{generateSectionSixteenParagraphOne()}</p>
-            <p>{generateSectionSixteenParagraphTwo()}</p>
-            <p>{generateSectionSixteenParagraphThree()}</p>
-            <p>{generateSectionSixteenParagraphFour()}</p>
+            {generateSectionSixteen()}
 
             <hr></hr>
 
