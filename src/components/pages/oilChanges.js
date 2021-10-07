@@ -14,7 +14,7 @@ class oilChanges extends Component {
             });
 
             if (type !== 'list') {
-                arr.unshift('<p>')
+                arr.unshift('<p class=\'seoContentP\'>')
                 arr.push('</p>')
             }
             arr.join(' ')
@@ -1014,43 +1014,43 @@ class oilChanges extends Component {
             <p>{'</div>'}</p>
             <p>{'</div>'}</p>
             
-            <h2>{'<h2>Why Do Cars Need An oil change? | Oil Change Service in ' + this.props.city + '</h2>'}</h2>
+            <h2>{'<h2 class=\'seoContentH\'>Why Do Cars Need An oil change? | Oil Change Service in ' + this.props.city + '</h2>'}</h2>
             {generateSectionOne()}
-            <h2>{'<h2>What is Synthetic-Blend Oil? </h2>'}</h2>
+            <h2>{'<h2 class=\'seoContentH\'>What is Synthetic-Blend Oil? </h2>'}</h2>
             {generateSectionTwo()}
-            <p>{'<p>Synthetic blend ' + generateAdverbSeven() + ' oil combines the advanced properties of standard ' + generateAdverbSeven() + ' oil and fully synthetic oil.</p>'}</p>
-            <h2>{'<h2>What is The Difference Between Synthetic Blend Oil vs Full Synthetic Oil? </h2>'}</h2>
+            <p>{'<p class=\'seoContentP\'>Synthetic blend ' + generateAdverbSeven() + ' oil combines the advanced properties of standard ' + generateAdverbSeven() + ' oil and fully synthetic oil.</p>'}</p>
+            <h2>{'<h2 class=\'seoContentH\'>What is The Difference Between Synthetic Blend Oil vs Full Synthetic Oil? </h2>'}</h2>
             {generateSectionThree()}
-            <h2>{'<h2>How Often Does a ' + this.props.make + ' Need an Oil Change?</h2>'}</h2>
+            <h2>{'<h2 class=\'seoContentH\'>How Often Does a ' + this.props.make + ' Need an Oil Change?</h2>'}</h2>
             {generateSectionFour()}
-            <h2>{'<h2>Full Synthetic Oil Change</h2>'}</h2>
+            <h2>{'<h2 class=\'seoContentH\'>Full Synthetic Oil Change</h2>'}</h2>
             {generateSectionFive()}
-            <h2>{'<h2>Conventional Motor Oil | Conventional Oil Change Benefits</h2>'}</h2>
+            <h2>{'<h2 class=\'seoContentH\'>Conventional Motor Oil | Conventional Oil Change Benefits</h2>'}</h2>
             {generateSectionSix()}
-            <h2>{'<h2>High Mileage Motor Oil | High Mileage oil change Benefits </h2>'}</h2>
+            <h2>{'<h2 class=\'seoContentH\'>High Mileage Motor Oil | High Mileage oil change Benefits </h2>'}</h2>
             {generateSectionSeven()}
-            <h2>{'<h2>How Much Oil Does a ' + this.props.make + ' Take?</h2>'}</h2>
+            <h2>{'<h2 class=\'seoContentH\'>How Much Oil Does a ' + this.props.make + ' Take?</h2>'}</h2>
             {generateSectionEight()}
-            <h2>{'<h2>What Occurs If You Don\'t Change The Oil In Your ' + this.props.make + '?</h2>'}</h2>
-            <p>{'<p>Motor oil has innumerable ' + generateAdverbSix() + ' functions & benefits, which include:</p>'}</p>
+            <h2>{'<h2 class=\'seoContentH\'>What Occurs If You Don\'t Change The Oil In Your ' + this.props.make + '?</h2>'}</h2>
+            <p>{'<p class=\'seoContentP\'>Motor oil has innumerable ' + generateAdverbSix() + ' functions & benefits, which include:</p>'}</p>
             <ul>
-                {'<ul>'}
+                {'<ul class=\'seoContentP\'>'}
                 {generateSectionNine()}
                 {'</ul>'}
             </ul>            
-            <h2>{'<h2>How Much Does An Oil Change Cost For a ' + this.props.make + '?</h2>'}</h2>
+            <h2>{'<h2 class=\'seoContentH\'>How Much Does An Oil Change Cost For a ' + this.props.make + '?</h2>'}</h2>
             {generateSectionTen()}
-            <h2>{'<h2>' + this.props.make + ' Oil Change Near Me | Oil Change Coupons ' + this.props.city + ', ' + this.props.state + '</h2>'}</h2>            
+            <h2>{'<h2 class=\'seoContentH\'>' + this.props.make + ' Oil Change Near Me | Oil Change Coupons ' + this.props.city + ', ' + this.props.state + '</h2>'}</h2>            
             {generateSectionEleven()}
-            <h2>{'<h2>Can You Mix Conventional Oil & Synthetic Motor Oil?</h2>'}</h2>            
+            <h2>{'<h2 class=\'seoContentH\'>Can You Mix Conventional Oil & Synthetic Motor Oil?</h2>'}</h2>            
             {generateSectionTwelve()}
-            <h2>{'<h2>What Type Of Oil Does a ' + this.props.make + ' Use? | What Oil Does ' + this.props.make + ' Need? | Types of Motor Oil</h2>'}</h2>
+            <h2>{'<h2 class=\'seoContentH\'>What Type Of Oil Does a ' + this.props.make + ' Use? | What Oil Does ' + this.props.make + ' Need? | Types of Motor Oil</h2>'}</h2>
             {generateSectionThirdteen()}
-            <h2>{'<h2>Best ' + this.props.city + ' High Mileage Oil Change | Why Use High Mileage Oil?</h2>'}</h2>
+            <h2>{'<h2 class=\'seoContentH\'>Best ' + this.props.city + ' High Mileage Oil Change | Why Use High Mileage Oil?</h2>'}</h2>
             {generateSectionFourteen()}
-            <h2>{'<h2>' + this.props.make + ' Oil Change Price at ' + this.props.dealer + '</h2>'}</h2>
+            <h2>{'<h2 class=\'seoContentH\'>' + this.props.make + ' Oil Change Price at ' + this.props.dealer + '</h2>'}</h2>
             {generateSectionFifteen()}
-            <h2>{'<h2>Why Is Full Synthetic Motor Oil So Expensive? What Are The Benefits Of Synthetic Oil Changes?</h2>'}</h2>
+            <h2>{'<h2 class=\'seoContentH\'>Why Is Full Synthetic Motor Oil So Expensive? What Are The Benefits Of Synthetic Oil Changes?</h2>'}</h2>
             {generateSectionSixteen()}
 
             <hr></hr>
@@ -1124,19 +1124,54 @@ class oilChanges extends Component {
             <p>{'text-decoration: none;'}</p>
             <p>{'}'}</p>
 
-            <p>{'@media screen and (min-width: 300px) and (max-width: 400px) {'}</p>
-            <p>{'.contentHeaderContainer{'}</p>
-            <p>{'height: 200px;'}</p>
+            <p>{'@media screen and (min-width: 320px) and (max-width: 420px) {'}</p>
+            <p>{'.contentHeader {'}</p>
+            <p>{'font-size: 9px'}</p>
             <p>{'}'}</p>
+            <p>{'.contentHeaderParagraph {'}</p>
+            <p>{'font-size: 9px'}</p>
             <p>{'}'}</p>
-            <p>{'@media screen and (min-width: 400px) and (max-width: 500px) {'}</p>
-            <p>{'.contentHeaderContainer{'}</p>
+            <p>{'.contentHeaderButtons {'}</p>
+            <p>{'font-size: 9px;'}</p>
+            <p>{'padding: 5px;'}</p>
+            <p>{'border-radius: 8px;'}</p>
+            <p>{'}'}</p>
+            <p>{'.contentHeaderContainer {'}</p>
             <p>{'height: 250px;'}</p>
             <p>{'}'}</p>
+            <p>{'.contentHeaderButtonContainer {'}</p>
+            <p>{'width: 300px;'}</p>
             <p>{'}'}</p>
-            <p>{'@media screen and (min-width: 500px) and (max-width: 600px) {'}</p>
-            <p>{'.contentHeaderContainer{'}</p>
-            <p>{'height: 300px;'}</p>
+            <p>{'.seoContentP {'}</p>
+            <p>{'font-size: 10px;'}</p>
+            <p>{'}'}</p>
+            <p>{'.seoContentH {'}</p>
+            <p>{'font-size: 12px !important;'}</p>
+            <p>{'}'}</p>
+            <p>{'}'}</p>
+            <p>{'@media screen and (min-width: 420px) and (max-width: 520px) {'}</p> 
+            <p>{'.contentHeader {'}</p>
+            <p>{'font-size: 12px'}</p>
+            <p>{'}'}</p>
+            <p>{'.contentHeaderParagraph {'}</p>
+            <p>{'font-size: 12px'}</p>
+            <p>{'}'}</p>
+            <p>{'.contentHeaderButtons {'}</p>
+            <p>{'font-size: 10px;'}</p>
+            <p>{'padding: 5px;'}</p>
+            <p>{'border-radius: 9px;'}</p>
+            <p>{'}'}</p>
+            <p>{'.contentHeaderContainer {'}</p>
+            <p>{'height: 250px'};</p>
+            <p>{'}'}</p>
+            <p>{'.contentHeaderButtonContainer {'}</p>
+            <p>{'width: 340px;'}</p>
+            <p>{'}'}</p>
+            <p>{'.seoContentP {'}</p>
+            <p>{'font-size: 12px;'}</p>
+            <p>{'}'}</p>
+            <p>{'.seoContentH {'}</p>
+            <p>{'font-size: 15px !important;'}</p>
             <p>{'}'}</p>
             <p>{'}'}</p>
             <p>{'</style>'}</p>
