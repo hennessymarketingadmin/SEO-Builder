@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 class oilChanges extends Component {
 
     state = {
         imageUrl: '',
+        content: '',
     }
     
     render() {
@@ -15,10 +17,10 @@ class oilChanges extends Component {
 
             if (type !== 'list') {
                 arr.unshift('<p class=\'seoContentP\'>')
-                arr.push('</p>')
+                arr.push('</p>\n')
             }
-            arr.join(' ')
-            return arr
+            arr.join(', ')
+            return arr.join('')
         }
 
         const shuffleAdverb = (words) => {
@@ -979,13 +981,177 @@ class oilChanges extends Component {
             return suffleParagraphs(paragraphs)
         }
 
+        const copyContent = () => {
+            let x = [
+            '<div class=\'contentHeaderContainer\'>\n',
+            '<h1 class=\'contentHeader\'>' + this.props.make + ' Oil Changes in ' + this.props.city + '</h1>\n',
+            '<p class=\'contentHeaderParagraph\'>Schedule your Brake Service & Repair appointment online now!\n',
+            '<div class=\'contentHeaderButtonContainer\'>\n',
+            '<a href=' + this.props.serviceApp + ' target=\'_blank\'><button class=\'contentHeaderButtons\'>Schedule Service</button></a>\n',
+            '<a href=' + this.props.serviceSpecials + ' target=\'_blank\'><button class=\'contentHeaderButtons\'>View Service Schedules</button></a>\n',
+            '</div>\n',
+            '</div>\n',
+            '<h2 class=\'seoContentH\'>Why Do Cars Need An oil change? | Oil Change Service in ' + this.props.city + '</h2>\n',
+            generateSectionOne(),
+            '<h2 class=\'seoContentH\'>What is Synthetic-Blend Oil? </h2>\n',
+            generateSectionTwo(),
+            '<p class=\'seoContentP\'>Synthetic blend ' + generateAdverbSeven() + ' oil combines the advanced properties of standard ' + generateAdverbSeven() + ' oil and fully synthetic oil.</p>\n',
+            '<h2 class=\'seoContentH\'>What is The Difference Between Synthetic Blend Oil vs Full Synthetic Oil? </h2>\n',
+            generateSectionThree(),
+            '<h2 class=\'seoContentH\'>How Often Does a ' + this.props.make + ' Need an Oil Change?</h2>\n',
+            generateSectionFour(),
+            '<h2 class=\'seoContentH\'>Full Synthetic Oil Change</h2>\n',
+            generateSectionFive(),
+            '<h2 class=\'seoContentH\'>Conventional Motor Oil | Conventional Oil Change Benefits</h2>\n',
+            generateSectionSix(),
+            '<h2 class=\'seoContentH\'>High Mileage Motor Oil | High Mileage oil change Benefits </h2>\n',
+            generateSectionSeven(),
+            '<h2 class=\'seoContentH\'>How Much Oil Does a ' + this.props.make + ' Take?</h2>\n',
+            generateSectionEight(),
+            '<h2 class=\'seoContentH\'>What Occurs If You Don\'t Change The Oil In Your ' + this.props.make + '?</h2>\n',
+            '<p class=\'seoContentP\'>Motor oil has innumerable ' + generateAdverbSix() + ' functions & benefits, which include:</p>\n',
+            '<ul class=\'seoContentP\'>\n',
+            generateSectionNine(),
+            '</ul>\n',
+            '<h2 class=\'seoContentH\'>How Much Does An Oil Change Cost For a ' + this.props.make + '?</h2>\n',
+            generateSectionTen(),
+            '<h2 class=\'seoContentH\'>' + this.props.make + ' Oil Change Near Me | Oil Change Coupons ' + this.props.city + ', ' + this.props.state + '</h2>\n',            
+            generateSectionEleven(),
+            '<h2 class=\'seoContentH\'>Can You Mix Conventional Oil & Synthetic Motor Oil?</h2>\n',          
+            generateSectionTwelve(),
+            '<h2 class=\'seoContentH\'>What Type Of Oil Does a ' + this.props.make + ' Use? | What Oil Does ' + this.props.make + ' Need? | Types of Motor Oil</h2>\n',
+            generateSectionThirdteen(),
+            '<h2 class=\'seoContentH\'>Best ' + this.props.city + ' High Mileage Oil Change | Why Use High Mileage Oil?</h2>\n',
+            generateSectionFourteen(),
+            '<h2 class=\'seoContentH\'>' + this.props.make + ' Oil Change Price at ' + this.props.dealer + '</h2>\n',
+            generateSectionFifteen(),
+            '<h2 class=\'seoContentH\'>Why Is Full Synthetic Motor Oil So Expensive? What Are The Benefits Of Synthetic Oil Changes?</h2>\n',
+            generateSectionSixteen(),
+            '<style>\n',
+            '.contentHeaderContainer {\n',
+            this.state.imageUrl === '' ? 'background-image: url(https://images.pexels.com/photos/2244746/pexels-photo-2244746.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);' : 'background-image: url(' + this.state.imageUrl + ');\n',
+            'background-size: cover;\n',
+            'height: 400px;\n', 
+            'display: flex;\n',
+            'flex-direction: column;\n',
+            'justify-content: center;\n',
+            'align-items: center;\n',
+            '}\n',
+            '.contentHeader {\n',
+            'color: white;\n',
+            'font-size: 50px;\n',
+            'margin: 0;\n',
+            '}\n', 
+            '.contentHeaderButtonContainer {\n',
+            'display: flex;\n',
+            'flex-direction: row;\n',
+            'justify-content: space-between;\n',
+            'align-items: center;\n',
+            'width: 450px;\n',
+            'font-weight: bold;\n',
+            'text-transform: uppercase;\n',
+            'color: white;\n',
+            'font-family: sans-serif;\n',
+            'font-size: 30px;\n',
+            'padding: 10px;\n',
+            'text-align: center;\n',
+            'float: left;\n',
+            '}\n',
+            '.contentHeaderButtons {\n',
+            'color: #007FCB;\n',
+            'background-color: #fff;\n',
+            'border: 3px solid #00324F;\n',
+            'border-radius: 16px;\n',
+            'font-size: 15px;\n',
+            'cursor: pointer;\n',
+            'font-weight:bold;\n',
+            'padding: 10px 40px;\n',
+            'min-width: 25%;\n',
+            'text-decoration: none;\n',
+            'box-sizing: border-box;\n',
+            'transition: all 500ms ease;\n',
+            '}\n',
+            '.contentHeaderButtons:hover {\n',
+            'color: #FFFFFF;\n',
+            'border: #FFFFFF solid 3px;\n',
+            'background:#007FCB;\n',
+            '}\n',
+            '.contentHeaderParagraph {\n',
+            'color: white;\n',
+            'margin:0px;\n',
+            'font-size:16px;\n',
+            'text-transform:none;\n',
+            'font-weight:300;\n',
+            'padding:18px;\n',
+            '}\n',
+            '.seoLinks {\n',
+            'color: black;\n',
+            'font-weight: bold;\n',
+            'text-decoration: none;\n',
+            '}',
+            '@media screen and (min-width: 320px) and (max-width: 420px) {\n',
+            '.contentHeader {\n',
+            'font-size: 9px\n',
+            '}\n',
+            '.contentHeaderParagraph {\n',
+            'font-size: 9px\n',
+            '}\n',
+            '.contentHeaderButtons {\n',
+            'font-size: 9px;\n',
+            'padding: 5px;\n',
+            'border-radius: 8px;\n',
+            '}\n',
+            '.contentHeaderContainer {\n',
+            'height: 250px;\n',
+            '}\n',
+            '.contentHeaderButtonContainer {\n',
+            'width: 300px;\n',
+            '}\n',
+            '.seoContentP {\n',
+            'font-size: 10px;\n',
+            '}\n',
+            '.seoContentH {\n',
+            'font-size: 12px !important;\n',
+            '}\n',
+            '}\n',
+            '@media screen and (min-width: 420px) and (max-width: 520px) {\n', 
+            '.contentHeader {\n',
+            'font-size: 12px\n',
+            '}\n',
+            '.contentHeaderParagraph {\n',
+            'font-size: 12px\n',
+            '}\n',
+            '.contentHeaderButtons {\n',
+            'font-size: 10px;\n',
+            'padding: 5px;\n',
+            'border-radius: 9px;\n',
+            '}\n',
+            '.contentHeaderContainer {\n',
+            'height: 250px;\n',
+            '}\n',
+            '.contentHeaderButtonContainer {\n',
+            'width: 340px;\n',
+            '}\n',
+            '.seoContentP {\n',
+            'font-size: 12px;\n',
+            '}\n',
+            '.seoContentH {\n',
+            'font-size: 15px !important;\n',
+            '}\n',
+            '}\n',
+            '</style>\n',
+            ]
+            console.log(x.join(', '))
+            return x.join(' ')
+        }
 
         return (
             <div className='content'>
             <hr></hr>
-            <p>{'Title: ' + this.props.year + ' ' + this.props.make + ' ' + this.props.model}</p>
+            <p>Title:</p>
+            <p><CopyToClipboard text={this.props.year + ' ' + this.props.make + ' ' + this.props.model}><button>Copy</button></CopyToClipboard>{this.props.year + ' ' + this.props.make + ' ' + this.props.model}</p>
             <p>Discription:</p>
-            <p>{'Find great deals for your oil change for your ' + this.props.year + ' ' + this.props.make + ' ' + this.props.model + ' at ' + this.props.dealer + ' located in ' + this.props.city + ' and metro area'}</p>
+            <p><CopyToClipboard text={'Find great deals for your oil change for your ' + this.props.year + ' ' + this.props.make + ' ' + this.props.model + ' at ' + this.props.dealer + ' located in ' + this.props.city + ' and metro area'}><button>Copy</button></CopyToClipboard>{'Find great deals for your oil change for your ' + this.props.year + ' ' + this.props.make + ' ' + this.props.model + ' at ' + this.props.dealer + ' located in ' + this.props.city + ' and metro area'}</p>
             <hr></hr>
             <input 
             className='imageInput' 
@@ -1004,7 +1170,7 @@ class oilChanges extends Component {
                     <a href={this.props.serviceSpecials} target='_blank'><button className='contentHeaderButtons'>View Service Schedules</button></a>
                 </div>
             </div>
-            
+            <CopyToClipboard text={copyContent()}><button>Copy</button></CopyToClipboard>
             <p>{'<div class=\'contentHeaderContainer\'>'}</p>
             <p>{'<h1 class=\'contentHeader\'>' + this.props.make + ' Oil Changes in ' + this.props.city + '</h1>'}</p>
             <p>{'<p class=\'contentHeaderParagraph\'>Schedule your Brake Service & Repair appointment online now!</p>'}</p>
@@ -1162,7 +1328,7 @@ class oilChanges extends Component {
             <p>{'border-radius: 9px;'}</p>
             <p>{'}'}</p>
             <p>{'.contentHeaderContainer {'}</p>
-            <p>{'height: 250px'};</p>
+            <p>{'height: 250px;'}</p>
             <p>{'}'}</p>
             <p>{'.contentHeaderButtonContainer {'}</p>
             <p>{'width: 340px;'}</p>
