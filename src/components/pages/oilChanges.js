@@ -20,6 +20,7 @@ class oilChanges extends Component {
                 arr.push('</p>\n')
             }
             arr.join(', ')
+            // console.log(arr)
             return arr.join('')
         }
 
@@ -492,44 +493,44 @@ class oilChanges extends Component {
 
         const generateSectionNineParagraphOne = () => {
             let arr = [
-                <li>{'<li>Protects the engine components from corrosion - Single of the additives present in most oils is particularly there to assist to decrease oxidation and save you corrosion.</li>'}</li>,
-                <li>{'<li>Keeps the ' + this.props.make + ' engine real - This is outstanding to keep the engine running at maximum efficiency. Oil picks up particles and dirt debris and carries them to the automobile oil filter, in which they become trapped. This reduces the threat of dust constructing up inside the engine and inflicting harm to the engine. </li>'}</li>,
-                <li>{'<li>Helps to decrease warmness - Aside from the explosions because of the spark plug and gasoline, warmness is constituted of the friction of engine components and immoderate warmness can reason sure harm to high-quality engine components. As ' + generateAdverbSeven() + ' oil moves across the engine, heat is carried away to cooler components. This dissipation of warmth method that no single place of the engine has to emerge as too hot. </li>'}</li>,
-                <li>{'<li>Prevents engine knocking - Since components, like your engine pistons, do not touch, the automobile oil offers lubrication and prevents the components from touching. This helps prevents issues and harm because of engine knocking.</li>'}</li>,
-                <li>{'<li>To help to improve gas efficiency - The slipperier the engine components then the much less pressure mandatory to transport them, so much less gas is utilized by the engine.</li>'}</li>,
+                '<li>Protects the engine components from corrosion - Single of the additives present in most oils is particularly there to assist to decrease oxidation and save you corrosion.</li>',
+                '<li>Keeps the ' + this.props.make + ' engine real - This is outstanding to keep the engine running at maximum efficiency. Oil picks up particles and dirt debris and carries them to the automobile oil filter, in which they become trapped. This reduces the threat of dust constructing up inside the engine and inflicting harm to the engine. </li>',
+                '<li>Helps to decrease warmness - Aside from the explosions because of the spark plug and gasoline, warmness is constituted of the friction of engine components and immoderate warmness can reason sure harm to high-quality engine components. As ' + generateAdverbSeven() + ' oil moves across the engine, heat is carried away to cooler components. This dissipation of warmth method that no single place of the engine has to emerge as too hot. </li>',
+                '<li>Prevents engine knocking - Since components, like your engine pistons, do not touch, the automobile oil offers lubrication and prevents the components from touching. This helps prevents issues and harm because of engine knocking.</li>',
+                '<li>To help to improve gas efficiency - The slipperier the engine components then the much less pressure mandatory to transport them, so much less gas is utilized by the engine.</li>',
             ]
             return shuffle(arr, 'list')
         }
 
         const generateSectionNineParagraphTwo = () => {
             let arr = [
-                <li>{'<li>Protects the engine parts from corrosion - Single of the additives present in most oils is especially there to help to decrease oxidization and prevent corrosion.</li>'}</li>,
-                <li>{'<li>Keeps the ' + this.props.make + ' engine real - this is often outstanding to stay the engine running at most efficiency. Oil picks up particles and dirt rubbish and carries them to the car oil filter, during which they become trapped. This reduces the threat of dust constructing up within the engine and inflicting hurt to the engine.</li>'}</li>,
-                <li>{'<li>Helps to decrease high temperature - aside from the explosions due to the spark plug and gasoline, high temperature is brought about of the friction of engine parts and immoderate warmness can reason certain damage to high-quality engine components. As oil moves across the engine, heat is carried away to cooler components. This dissipation of heat method that no single place of the engine needs to emerge as too hot.</li>'}</li>,
-                <li>{'<li>Prevents engine knocking - Since components, like your engine pistons, don\'t touch, the car oil offers lubrication and prevents the components from touching. This helps prevents problems and harm because of engine knocking.</li>'}</li>,
-                <li>{'<li>To help to boost gas potency - The slipperier the engine parts then the much less pressure necessary to move them, so much less gas is used by the engine. </li>'}</li>,
+                '<li>Protects the engine parts from corrosion - Single of the additives present in most oils is especially there to help to decrease oxidization and prevent corrosion.</li>',
+                '<li>Keeps the ' + this.props.make + ' engine real - this is often outstanding to stay the engine running at most efficiency. Oil picks up particles and dirt rubbish and carries them to the car oil filter, during which they become trapped. This reduces the threat of dust constructing up within the engine and inflicting hurt to the engine.</li>',
+                '<li>Helps to decrease high temperature - aside from the explosions due to the spark plug and gasoline, high temperature is brought about of the friction of engine parts and immoderate warmness can reason certain damage to high-quality engine components. As oil moves across the engine, heat is carried away to cooler components. This dissipation of heat method that no single place of the engine needs to emerge as too hot.</li>',
+                '<li>Prevents engine knocking - Since components, like your engine pistons, don\'t touch, the car oil offers lubrication and prevents the components from touching. This helps prevents problems and harm because of engine knocking.</li>',
+                '<li>To help to boost gas potency - The slipperier the engine parts then the much less pressure necessary to move them, so much less gas is used by the engine. </li>',
             ]
             return shuffle(arr, 'list')
         }
 
         const generateSectionNineParagraphThree = () => {
             let arr = [
-                <li>{'<li>Protects engine parts from corrosion, - One of the additives in most oils is specifically designed to reduce oxidation and prevent corrosion.</li>'}</li>,
-                <li>{'<li>Keeps the ' + this.props.make + ' engine real - this is often great for running the engine at maximum efficiency. The oil collects the particles and dirt and transports them to the car\'s oil filter, where they are trapped. This reduces the risk of dust building up inside.</li>'}</li>,
-                <li>{'<li>Helps reduce high temperatures - in addition to spark plug and gasoline explosions, high temperatures are caused by friction between engine parts, and excessive heat can damage high-quality engine components. This method of heat dissipation doesn\'t need to get too hot anywhere in the engine.</li>'}</li>,
-                <li>{'<li>Prevents Engine Shocks - Because components such as engine pistons do not touch, auto oil provides lubrication and prevents components from touching. This will help prevent engine knocking problems and damage.</li>'}</li>,
-                <li>{'<li>To Increase Gas Efficiency - The ' + generateAdverbSix() + ' slippery the engine parts, the less pressure it takes to move them, so the engine uses less gasoline.</li>'}</li>,
+                '<li>Protects engine parts from corrosion, - One of the additives in most oils is specifically designed to reduce oxidation and prevent corrosion.</li>',
+                '<li>Keeps the ' + this.props.make + ' engine real - this is often great for running the engine at maximum efficiency. The oil collects the particles and dirt and transports them to the car\'s oil filter, where they are trapped. This reduces the risk of dust building up inside.</li>',
+                '<li>Helps reduce high temperatures - in addition to spark plug and gasoline explosions, high temperatures are caused by friction between engine parts, and excessive heat can damage high-quality engine components. This method of heat dissipation doesn\'t need to get too hot anywhere in the engine.</li>',
+                '<li>Prevents Engine Shocks - Because components such as engine pistons do not touch, auto oil provides lubrication and prevents components from touching. This will help prevent engine knocking problems and damage.</li>',
+                '<li>To Increase Gas Efficiency - The ' + generateAdverbSix() + ' slippery the engine parts, the less pressure it takes to move them, so the engine uses less gasoline.</li>',
             ]
             return shuffle(arr, 'list')
         }
 
         const generateSectionNineParagraphFour = () => {
             let arr = [
-                <li>{'<li>Protects engine parts from corrosion - One of the additives in most oils is specially formulated to reduce oxidation and prevent corrosion.</li>'}</li>,
-                <li>{'<li>Retains the real ' + this.props.make + ' engine - which is often ideal for running the engine at maximum efficiency. The oil collects particles and dirt and carries them to the car\'s oil filter, where they are trapped. This reduces the risk of dust accumulation inside.</li>'}</li>,
-                <li>{'<li>Helps reduce high temperatures - In addition to spark plug and gasoline explosions, high temperatures are caused by friction between engine parts, and excessive heat can damage high quality engine components. This method of heat dissipation does not need to overheat anywhere on the ' + generateAdverbSeven() + '.</li>'}</li>,
-                <li>{'<li>Prevents engine shock - Since components such as the engine pistons do not touch each other, car oil provides lubrication and prevents contact of the components. This will help prevent knocking problems and engine damage.</li>'}</li>,
-                <li>{'<li>To increase gas efficiency - The slicker the slippery parts of the engine, the lower the pressure required to move them, so that the engine uses less gasoline.</li>'}</li>,
+                '<li>Protects engine parts from corrosion - One of the additives in most oils is specially formulated to reduce oxidation and prevent corrosion.</li>',
+                '<li>Retains the real ' + this.props.make + ' engine - which is often ideal for running the engine at maximum efficiency. The oil collects particles and dirt and carries them to the car\'s oil filter, where they are trapped. This reduces the risk of dust accumulation inside.</li>',
+                '<li>Helps reduce high temperatures - In addition to spark plug and gasoline explosions, high temperatures are caused by friction between engine parts, and excessive heat can damage high quality engine components. This method of heat dissipation does not need to overheat anywhere on the ' + generateAdverbSeven() + '.</li>',
+                '<li>Prevents engine shock - Since components such as the engine pistons do not touch each other, car oil provides lubrication and prevents contact of the components. This will help prevent knocking problems and engine damage.</li>',
+                '<li>To increase gas efficiency - The slicker the slippery parts of the engine, the lower the pressure required to move them, so that the engine uses less gasoline.</li>',
             ]
             return shuffle(arr, 'list')
         }
@@ -1047,7 +1048,7 @@ class oilChanges extends Component {
             'flex-direction: row;\n',
             'justify-content: space-between;\n',
             'align-items: center;\n',
-            'width: 450px;\n',
+            'width: 400px;\n',
             'font-weight: bold;\n',
             'text-transform: uppercase;\n',
             'color: white;\n',
@@ -1065,7 +1066,7 @@ class oilChanges extends Component {
             'font-size: 15px;\n',
             'cursor: pointer;\n',
             'font-weight:bold;\n',
-            'padding: 10px 40px;\n',
+            'padding: 10px;\n',
             'min-width: 25%;\n',
             'text-decoration: none;\n',
             'box-sizing: border-box;\n',
@@ -1105,7 +1106,7 @@ class oilChanges extends Component {
             'height: 250px;\n',
             '}\n',
             '.contentHeaderButtonContainer {\n',
-            'width: 300px;\n',
+            'width: 250px;\n',
             '}\n',
             '.seoContentP {\n',
             'font-size: 10px;\n',
@@ -1141,7 +1142,6 @@ class oilChanges extends Component {
             '}\n',
             '</style>\n',
             ]
-            console.log(x.join(', '))
             return x.join(' ')
         }
 
@@ -1149,9 +1149,9 @@ class oilChanges extends Component {
             <div className='content'>
             <hr></hr>
             <p>Title:</p>
-            <p><CopyToClipboard text={this.props.year + ' ' + this.props.make + ' ' + this.props.model}><button>Copy</button></CopyToClipboard>{this.props.year + ' ' + this.props.make + ' ' + this.props.model}</p>
+            <p><CopyToClipboard text={this.props.year + ' ' + this.props.make + ' ' + this.props.model}><button className='copyBtnTitle'>Copy</button></CopyToClipboard>{this.props.year + ' ' + this.props.make + ' ' + this.props.model}</p>
             <p>Discription:</p>
-            <p><CopyToClipboard text={'Find great deals for your oil change for your ' + this.props.year + ' ' + this.props.make + ' ' + this.props.model + ' at ' + this.props.dealer + ' located in ' + this.props.city + ' and metro area'}><button>Copy</button></CopyToClipboard>{'Find great deals for your oil change for your ' + this.props.year + ' ' + this.props.make + ' ' + this.props.model + ' at ' + this.props.dealer + ' located in ' + this.props.city + ' and metro area'}</p>
+            <p><CopyToClipboard text={'Find great deals for your oil change for your ' + this.props.year + ' ' + this.props.make + ' ' + this.props.model + ' at ' + this.props.dealer + ' located in ' + this.props.city + ' and metro area'}><button className='copyBtnTitle'>Copy</button></CopyToClipboard>{'Find great deals for your oil change for your ' + this.props.year + ' ' + this.props.make + ' ' + this.props.model + ' at ' + this.props.dealer + ' located in ' + this.props.city + ' and metro area'}</p>
             <hr></hr>
             <input 
             className='imageInput' 
@@ -1170,7 +1170,7 @@ class oilChanges extends Component {
                     <a href={this.props.serviceSpecials} target='_blank'><button className='contentHeaderButtons'>View Service Schedules</button></a>
                 </div>
             </div>
-            <CopyToClipboard text={copyContent()}><button>Copy</button></CopyToClipboard>
+            <CopyToClipboard text={copyContent()}><button className='copyBtnContent'>Copy Content</button></CopyToClipboard>
             <p>{'<div class=\'contentHeaderContainer\'>'}</p>
             <p>{'<h1 class=\'contentHeader\'>' + this.props.make + ' Oil Changes in ' + this.props.city + '</h1>'}</p>
             <p>{'<p class=\'contentHeaderParagraph\'>Schedule your Brake Service & Repair appointment online now!</p>'}</p>
@@ -1199,11 +1199,9 @@ class oilChanges extends Component {
             {generateSectionEight()}
             <h2>{'<h2 class=\'seoContentH\'>What Occurs If You Don\'t Change The Oil In Your ' + this.props.make + '?</h2>'}</h2>
             <p>{'<p class=\'seoContentP\'>Motor oil has innumerable ' + generateAdverbSix() + ' functions & benefits, which include:</p>'}</p>
-            <ul>
-                {'<ul class=\'seoContentP\'>'}
-                {generateSectionNine()}
-                {'</ul>'}
-            </ul>            
+            {'<ul class=\'seoContentP\'>'}
+            {generateSectionNine()}
+            {'</ul>'}
             <h2>{'<h2 class=\'seoContentH\'>How Much Does An Oil Change Cost For a ' + this.props.make + '?</h2>'}</h2>
             {generateSectionTen()}
             <h2>{'<h2 class=\'seoContentH\'>' + this.props.make + ' Oil Change Near Me | Oil Change Coupons ' + this.props.city + ', ' + this.props.state + '</h2>'}</h2>            
@@ -1306,7 +1304,7 @@ class oilChanges extends Component {
             <p>{'height: 250px;'}</p>
             <p>{'}'}</p>
             <p>{'.contentHeaderButtonContainer {'}</p>
-            <p>{'width: 300px;'}</p>
+            <p>{'width: 250px;'}</p>
             <p>{'}'}</p>
             <p>{'.seoContentP {'}</p>
             <p>{'font-size: 10px;'}</p>
