@@ -117,8 +117,8 @@ class App extends Component {
             this.setState({serviceCenter: 'https://www.landroverbuckhead.net/service-department.htm'})
             this.setState({serviceApp: 'https://www.landroverbuckhead.net/service/schedule-appointment.htm'})
             this.setState({serviceSpecials: 'https://www.landroverbuckhead.net/promotions/service/index.htm'})
-        } else if (dealer === 'Land Rover North Georgia') {
-            this.setState({dealer: 'Land Rover North Georgia'})
+        } else if (dealer === 'Land Rover North Atlanta') {
+            this.setState({dealer: 'Land Rover North Atlanta'})
             this.setState({address: '1505 Mansell Rd, Alpharetta, GA 30009'})
             this.setState({state: 'Georgia'})
             // this.setState({city: 'Alpharetta'})

@@ -1158,7 +1158,7 @@ class oilChanges extends Component {
             placeholder='Update image with url link'
             onChange = {(event) => {
                 let text = event.target.value;
-                console.log(text)
+                // console.log(text) 
                 this.setState({imageUrl: text})
             }}
             ></input>

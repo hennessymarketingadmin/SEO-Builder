@@ -35,7 +35,7 @@
     border: none;
     padding: 10px 30px;
     color: white;
-    margin: 0px;
+    margin: 20px 0px 0px 0px;
     margin-bottom: 30px;
     cursor: pointer;
     font-size: 20px;
@@ -182,7 +182,7 @@ hr {
     padding: 12px 40px;
     border-radius: 4px;
     cursor: pointer;
-    margin-right: 5px;
+    margin: 20px 5px 5px 5px;
     width: 1000px;
 }
 .dropdown-content {
