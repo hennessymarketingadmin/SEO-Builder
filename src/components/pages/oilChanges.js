@@ -986,7 +986,7 @@ class oilChanges extends Component {
             let x = [
             '<div class=\'contentHeaderContainer\'>\n',
             '<h1 class=\'contentHeader\'>' + this.props.make + ' Oil Changes in ' + this.props.city + '</h1>\n',
-            '<p class=\'contentHeaderParagraph\'>Schedule your Brake Service & Repair appointment online now!\n',
+            '<p class=\'contentHeaderParagraph\'>Schedule your oil changes appointment online now!\n',
             '<div class=\'contentHeaderButtonContainer\'>\n',
             '<a href=' + this.props.serviceApp + ' target=\'_blank\'><button class=\'contentHeaderButtons\'>Schedule Service</button></a>\n',
             '<a href=' + this.props.serviceSpecials + ' target=\'_blank\'><button class=\'contentHeaderButtons\'>View Service Schedules</button></a>\n',

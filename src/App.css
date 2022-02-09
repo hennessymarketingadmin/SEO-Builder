@@ -113,6 +113,7 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 20px;
 }
 
 .contentHeader {
@@ -226,6 +227,7 @@ display: block;
     border: none;
     padding: 12px 35px;
     margin-top: 5px;
+    margin-bottom: 20px;
     cursor: pointer;
     font-size: larger;
 }
