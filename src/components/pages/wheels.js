@@ -171,7 +171,7 @@ class Wheels extends Component {
                 '<section class=\"milesSection\">\n',
                 '<div class=\"milesSectionContainer\">\n',
                 '<div class=\"milesSectionLeft\">\n',
-                '<h3 class="milageTitle">Is Your "car" Ready For Its Next Wheel Alignment?</h3>\n',
+                '<h3 class="milageTitle">Is Your ' + this.props.model + ' Ready For Its Next Wheel Alignment?</h3>\n',
                 '</div>\n',
                 '<div class=\"milesSectionRight\">\n',
                 '<h5>Enter your car millage to find out</h5>\n',
