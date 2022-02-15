@@ -174,7 +174,7 @@ class Wheels extends Component {
                 '<h3 class="milageTitle">Is Your ' + this.props.model + ' Ready For Its Next Wheel Alignment?</h3>\n',
                 '</div>\n',
                 '<div class=\"milesSectionRight\">\n',
-                '<h5>Enter your car millage to find out</h5>\n',
+                '<h5>Enter your ' + this.props.model + ' mileage to find out</h5>\n',
                 '<input id=\"miles\" class=\"milesInput\" placeholder=\"Miles\" type="number\">\n',
                 '<button class=\"milesButton\" onclick=\"generateServices()\">Enter</button>\n',
                 '</div>\n',
