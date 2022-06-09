@@ -12,6 +12,7 @@ import TiresPage from './components/pages/tires.js';
 import TransmissionPage from './components/pages/transmission.js';
 import WheelsPage from './components/pages/wheels.js';
 import BrakesPage from './components/pages/brakes.js';
+import RoadTripPage from './components/pages/roadTrip.js';
 
 
 class App extends Component {
@@ -371,6 +372,21 @@ class App extends Component {
                 serviceApp={this.state.serviceApp}
                 serviceSpecials={this.state.serviceSpecials}
             />
+        } else if (page === 'RoadTrip') {
+            return <RoadTripPage 
+                make={this.state.make}
+                model={this.state.model}
+                year={this.state.year}
+                city={this.state.city}
+                zip={this.state.zip}
+                address={this.state.address}
+                state={this.state.state}
+                dealer={this.state.dealer}
+                phone={this.state.phone}
+                serviceCenter={this.state.serviceCenter}
+                serviceApp={this.state.serviceApp}
+                serviceSpecials={this.state.serviceSpecials}
+            />
         }
     }
 
@@ -459,6 +475,7 @@ class App extends Component {
                     <p onClick={()=>{this.setState({page: 'Diagnostics'})}}>Diagnostics</p>
                     <p onClick={()=>{this.setState({page: 'Schedule'})}}>Schedule Maintenance</p>
                     <p onClick={()=>{this.setState({page: 'Recall'})}}>Recall Information</p>
+                    <p onClick={()=>{this.setState({page: 'RoadTrip'})}}>Road Trip</p>
                 </div>
             </div>
             </div>
