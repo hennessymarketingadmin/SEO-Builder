@@ -32,6 +32,7 @@ class App extends Component {
         serviceCenter: '',
         serviceApp: '',
         serviceSpecials: '',
+        allInventory: ''
     }
 
     render () {
@@ -55,6 +56,7 @@ class App extends Component {
             this.setState({serviceCenter: 'https://www.hennessyhonda.com/service/index.htm'})
             this.setState({serviceApp: 'https://www.hennessyhonda.com/schedule-a-service-appointment.htm'})
             this.setState({serviceSpecials: 'https://www.hennessyhonda.com/promotions/service/index.htm'})
+            this.setState({allInventory: 'https://www.hennessyhonda.com/all-inventory/index.htm'})
         } else if (dealer === 'Porche') {
             this.setState({dealer: 'Hennessy Porsche North Atlanta'})
             this.setState({address: '990 Mansell Rd, Roswell, GA 30076'})
@@ -64,6 +66,7 @@ class App extends Component {
             this.setState({serviceCenter: 'https://www.hennessyporsche.com/service/index.htm'})
             this.setState({serviceApp: 'https://www.hennessyporsche.com/schedule_service.htm'})
             this.setState({serviceSpecials: 'https://www.hennessyporsche.com/promotions/service/index.htm'})
+            this.setState({allInventory: 'https://www.hennessyporsche.com/all-inventory/index.htm'})
         } else if (dealer === 'Mazda') {
             this.setState({dealer: 'Hennessy Mazda'})
             this.setState({address: '7261 Jonesboro Road, Bld. 2, Morrow, GA 30260'})
@@ -73,6 +76,7 @@ class App extends Component {
             this.setState({serviceCenter: 'https://www.hennessy-mazda.com/service/'})
             this.setState({serviceApp: 'https://www.hennessy-mazda.com/schedule-service/'})
             this.setState({serviceSpecials: 'https://www.hennessy-mazda.com/service/service-specials/'})
+            this.setState({allInventory: 'https://www.hennessy-mazda.com/all-inventory/index.htm'})
         } else if (dealer === 'Lincoln') {
             this.setState({dealer: 'Hennessy Lincoln Atlanta'})
             this.setState({address: '5675 Peachtree Industrial Boulevard Atlanta, GA 30341'})
@@ -82,6 +86,7 @@ class App extends Component {
             this.setState({serviceCenter: 'https://www.hennessylincolnatlanta.com/lincoln-priority-service-at-hennessy-lincoln-atlanta.htm'})
             this.setState({serviceApp: 'https://www.hennessylincolnatlanta.com/schedule-service.htm'})
             this.setState({serviceSpecials: 'https://www.hennessylincolnatlanta.com/service-specials-in-atlanta-ga.htm'})
+            this.setState({allInventory: 'https://www.hennessylincolnatlanta.com/all-inventory/index.htm'})
         } else if (dealer === 'Lexus Atlanta') {
             this.setState({dealer: 'Hennessy Lexus of Atlanta'})
             this.setState({address: '5955 Peachtree Industrial Blvd.Atlanta, GA 30341'})
@@ -91,6 +96,7 @@ class App extends Component {
             this.setState({serviceCenter: 'https://www.lexusatlanta.com/auto-repair-in-atlanta.htm'})
             this.setState({serviceApp: 'https://www.lexusatlanta.com/ServiceApptForm.htm'})
             this.setState({serviceSpecials: 'https://www.lexusatlanta.com/parts-and-service/service-specials.htm'})
+            this.setState({allInventory: 'https://www.lexusatlanta.com/all-inventory/index.htm'})
         } else if (dealer === 'Lexus Gwinnett') {
             this.setState({dealer: 'Hennessy Lexus of Gwinnett'})
             this.setState({address: '3383 Satellite Blvd, Duluth, GA 30096'})
@@ -100,6 +106,7 @@ class App extends Component {
             this.setState({serviceCenter: 'https://www.lexusgwinnett.com/auto-repair-in-duluth.htm'})
             this.setState({serviceApp: 'https://www.lexusgwinnett.com/ServiceApptForm.htm'})
             this.setState({serviceSpecials: 'https://www.lexusgwinnett.com/parts-and-service/service-specials.htm'})
+            this.setState({allInventory: 'https://www.lexusgwinnett.com/all-inventory/index.htm'})
         } else if (dealer === 'Land Rover Gwinnett') {
             this.setState({dealer: 'Land Rover Gwinnett'})
             this.setState({address: '3423 Old Norcross Rd, Duluth, GA 30096'})
@@ -109,6 +116,7 @@ class App extends Component {
             this.setState({serviceCenter: 'https://www.landrovergwinnett.com/service-department.htm'})
             this.setState({serviceApp: 'https://www.landrovergwinnett.com/service/schedule-appointment.htm'})
             this.setState({serviceSpecials: 'https://www.landrovergwinnett.com/promotions/service/index.htm'})
+            this.setState({allInventory: 'https://www.landrovergwinnett.com/all-inventory/index.htm'})
         } else if (dealer === 'Land Rover Buckhead') {
             this.setState({dealer: 'Land Rover Buckhead'})
             this.setState({address: '3040 Piedmont Rd NE, Atlanta, GA 30305'})
@@ -118,6 +126,7 @@ class App extends Component {
             this.setState({serviceCenter: 'https://www.landroverbuckhead.net/service-department.htm'})
             this.setState({serviceApp: 'https://www.landroverbuckhead.net/service/schedule-appointment.htm'})
             this.setState({serviceSpecials: 'https://www.landroverbuckhead.net/promotions/service/index.htm'})
+            this.setState({allInventory: 'https://www.landroverbuckhead.net/all-inventory/index.htm'})
         } else if (dealer === 'Land Rover North Atlanta') {
             this.setState({dealer: 'Land Rover North Atlanta'})
             this.setState({address: '1505 Mansell Rd, Alpharetta, GA 30009'})
@@ -127,6 +136,7 @@ class App extends Component {
             this.setState({serviceCenter: 'https://www.landrovernorthatlanta.com/service-department.htm'})
             this.setState({serviceApp: 'https://www.landrovernorthatlanta.com/service/schedule-appointment.htm'})
             this.setState({serviceSpecials: 'https://www.landrovernorthatlanta.com/promotions/service/index.htm'})
+            this.setState({allInventory: 'https://www.landrovernorthatlanta.com/all-inventory/index.htm'})
         } else if (dealer === 'Ford') {
             this.setState({dealer: 'Hennessy Ford Atlanta'})
             this.setState({address: '5675 Peachtree Blvd, Atlanta, GA 30341'})
@@ -136,6 +146,7 @@ class App extends Component {
             this.setState({serviceCenter: 'https://www.hennessyford.com/service-center/'})
             this.setState({serviceApp: 'https://www.hennessyford.com/service-appointment/'})
             this.setState({serviceSpecials: 'https://www.hennessyford.com/service-coupons/'})
+            this.setState({allInventory: 'https://www.hennessyford.com/new-vehicles/'})
         } else if (dealer === 'GMC') {
             this.setState({dealer: 'Hennessy Buick GMC of Southlake'})
             this.setState({address: '7261 Jonesboro RD, Morrow, GA 30260'})
@@ -145,6 +156,7 @@ class App extends Component {
             this.setState({serviceCenter: 'https://www.hennessympg.com/service/'})
             this.setState({serviceApp: 'https://www.hennessympg.com/service/serviceapptform/'})
             this.setState({serviceSpecials: 'https://www.hennessympg.com/service/serviceandpartsspecials/'})
+            this.setState({allInventory: 'https://www.hennessympg.com/new-vehicles/'})
         } else if (dealer === 'Buick') {
             this.setState({dealer: 'Hennessy Buick GMC of Southlake'})
             this.setState({address: '7261 Jonesboro RD, Morrow, GA 30260'})
@@ -154,6 +166,7 @@ class App extends Component {
             this.setState({serviceCenter: 'https://www.hennessympg.com/service/'})
             this.setState({serviceApp: 'https://www.hennessympg.com/service/serviceapptform/'})
             this.setState({serviceSpecials: 'https://www.hennessympg.com/service/serviceandpartsspecials/'})
+            this.setState({allInventory: 'https://www.hennessympg.com/new-vehicles/'})
         } else if (dealer === 'Cadillac') {
             this.setState({dealer: 'Hennessy Cadillac'})
             this.setState({address: '3377 Satellite Blvd, Duluth, GA 30096'})
@@ -163,6 +176,7 @@ class App extends Component {
             this.setState({serviceCenter: 'https://www.hennessycadillac.com/service/'})
             this.setState({serviceApp: 'https://www.hennessycadillac.com/service/serviceapptform/'})
             this.setState({serviceSpecials: 'https://www.hennessycadillac.com/service/serviceandpartsspecials/'})
+            this.setState({allInventory: 'https://www.hennessycadillac.com/new-vehicles/'})
         } else if (dealer === 'Jaguar Atlanta') {
             this.setState({dealer: 'Hennessy Jaguar Atlanta'})
             this.setState({address: '3040 Piedmont Rd NE, Atlanta, GA 30305'})
@@ -171,6 +185,7 @@ class App extends Component {
             this.setState({serviceCenter: 'https://www.hennessyjaguaratlanta.com/service-department.htm'})
             this.setState({serviceApp: 'https://www.hennessyjaguaratlanta.com/service/schedule-appointment.htm'})
             this.setState({serviceSpecials: 'https://www.hennessyjaguaratlanta.com/promotions/service/index.htm'})
+            this.setState({allInventory: 'https://www.hennessyjaguaratlanta.com/all-inventory/index.htm'})
         } else if (dealer === 'Jaguar North Atlanta') {
             this.setState({dealer: 'Hennessy Jaguar North Atlanta'})
             this.setState({address: '1505 Mansell Rd, Alpharetta, GA 30009'})
@@ -179,6 +194,7 @@ class App extends Component {
             this.setState({serviceCenter: 'https://www.jaguarnorthatlanta.com/service-department.htm'})
             this.setState({serviceApp: 'https://www.jaguarnorthatlanta.com/service/schedule-appointment.htm'})
             this.setState({serviceSpecials: 'https://www.jaguarnorthatlanta.com/promotions/service/index.htm'})
+            this.setState({allInventory: 'https://www.jaguarnorthatlanta.com/all-inventory/index.htm'})
         } else if (dealer === 'Jaguar Gwinnett') {
             this.setState({dealer: 'Hennessy Jaguar Gwinnett'})
             this.setState({address: '3423 Old Norcross Rd, Duluth, GA 30096'})
@@ -187,6 +203,7 @@ class App extends Component {
             this.setState({serviceCenter: 'https://www.jaguargwinnett.com/service-department.htm'})
             this.setState({serviceApp: 'https://www.jaguargwinnett.com/service/schedule-appointment.htm'})
             this.setState({serviceSpecials: 'https://www.jaguargwinnett.com/promotions/service/index.htm'})
+            this.setState({allInventory: 'https://www.jaguargwinnett.com/all-inventory/index.htm'})
         }
     }
 
