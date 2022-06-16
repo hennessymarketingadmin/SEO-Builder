@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/SEO-Builder/static/css/main.406b6ffe.chunk.css",
-    "main.js": "/SEO-Builder/static/js/main.713d4d75.chunk.js",
-    "main.js.map": "/SEO-Builder/static/js/main.713d4d75.chunk.js.map",
+    "main.css": "/SEO-Builder/static/css/main.58e2f3db.chunk.css",
+    "main.js": "/SEO-Builder/static/js/main.6dd29504.chunk.js",
+    "main.js.map": "/SEO-Builder/static/js/main.6dd29504.chunk.js.map",
     "runtime-main.js": "/SEO-Builder/static/js/runtime-main.b6621b79.js",
     "runtime-main.js.map": "/SEO-Builder/static/js/runtime-main.b6621b79.js.map",
     "static/js/2.af802348.chunk.js": "/SEO-Builder/static/js/2.af802348.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.8aedc870.chunk.js": "/SEO-Builder/static/js/3.8aedc870.chunk.js",
     "static/js/3.8aedc870.chunk.js.map": "/SEO-Builder/static/js/3.8aedc870.chunk.js.map",
     "index.html": "/SEO-Builder/index.html",
-    "static/css/main.406b6ffe.chunk.css.map": "/SEO-Builder/static/css/main.406b6ffe.chunk.css.map",
+    "static/css/main.58e2f3db.chunk.css.map": "/SEO-Builder/static/css/main.58e2f3db.chunk.css.map",
     "static/js/2.af802348.chunk.js.LICENSE.txt": "/SEO-Builder/static/js/2.af802348.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b6621b79.js",
     "static/js/2.af802348.chunk.js",
-    "static/css/main.406b6ffe.chunk.css",
-    "static/js/main.713d4d75.chunk.js"
+    "static/css/main.58e2f3db.chunk.css",
+    "static/js/main.6dd29504.chunk.js"
   ]
 }
