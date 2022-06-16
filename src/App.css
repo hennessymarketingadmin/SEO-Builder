@@ -173,7 +173,7 @@ hr {
     align-items: center;
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 300px;
+    width: 400px;
     height: 50px;
 }
 .dropdown {
@@ -184,7 +184,7 @@ hr {
     border-radius: 4px;
     cursor: pointer;
     margin: 20px 5px 5px 5px;
-    width: 1000px;
+    width: auto;
 }
 .dropdown-content {
     display: none;

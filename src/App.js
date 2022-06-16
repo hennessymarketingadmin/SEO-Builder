@@ -13,7 +13,7 @@ import TransmissionPage from './components/pages/transmission.js';
 import WheelsPage from './components/pages/wheels.js';
 import BrakesPage from './components/pages/brakes.js';
 import RoadTripPage from './components/pages/roadTrip.js';
-
+import RoadTripGamePage from './components/pages/roadTripGames.js';
 
 class App extends Component {
     state = {
@@ -223,6 +223,7 @@ class App extends Component {
                 serviceCenter={this.state.serviceCenter}
                 serviceApp={this.state.serviceApp}
                 serviceSpecials={this.state.serviceSpecials}
+                allInventory={this.state.allInventory}
             />
         } else if (page === 'Filter') {
             return <FilterPage 
@@ -238,6 +239,7 @@ class App extends Component {
                 serviceCenter={this.state.serviceCenter}
                 serviceApp={this.state.serviceApp}
                 serviceSpecials={this.state.serviceSpecials}
+                allInventory={this.state.allInventory}
             />
         } else if (page === 'Brakes') {
             return <BrakesPage 
@@ -253,6 +255,7 @@ class App extends Component {
                 serviceCenter={this.state.serviceCenter}
                 serviceApp={this.state.serviceApp}
                 serviceSpecials={this.state.serviceSpecials}
+                allInventory={this.state.allInventory}
             />
         } else if (page === 'Battery') {
             return <BatteryPage 
@@ -268,6 +271,7 @@ class App extends Component {
                 serviceCenter={this.state.serviceCenter}
                 serviceApp={this.state.serviceApp}
                 serviceSpecials={this.state.serviceSpecials}
+                allInventory={this.state.allInventory}
             />
         } else if (page === 'Wheels') {
             return <WheelsPage 
@@ -283,6 +287,7 @@ class App extends Component {
                 serviceCenter={this.state.serviceCenter}
                 serviceApp={this.state.serviceApp}
                 serviceSpecials={this.state.serviceSpecials}
+                allInventory={this.state.allInventory}
             />
         } else if (page === 'Tires') {
             return <TiresPage 
@@ -298,6 +303,7 @@ class App extends Component {
                 serviceCenter={this.state.serviceCenter}
                 serviceApp={this.state.serviceApp}
                 serviceSpecials={this.state.serviceSpecials}
+                allInventory={this.state.allInventory}
             />
         } else if (page === 'Cabin') {
             return <CabinPage 
@@ -313,6 +319,7 @@ class App extends Component {
                 serviceCenter={this.state.serviceCenter}
                 serviceApp={this.state.serviceApp}
                 serviceSpecials={this.state.serviceSpecials}
+                allInventory={this.state.allInventory}
             />
         } else if (page === 'Transmission') {
             return <TransmissionPage 
@@ -328,6 +335,7 @@ class App extends Component {
                 serviceCenter={this.state.serviceCenter}
                 serviceApp={this.state.serviceApp}
                 serviceSpecials={this.state.serviceSpecials}
+                allInventory={this.state.allInventory}
             />
         } else if (page === 'Coolant') {
             return <CoolantPage 
@@ -343,6 +351,7 @@ class App extends Component {
                 serviceCenter={this.state.serviceCenter}
                 serviceApp={this.state.serviceApp}
                 serviceSpecials={this.state.serviceSpecials}
+                allInventory={this.state.allInventory}
             />
         } else if (page === 'Diagnostics') {
             return <DiagnosticsPage 
@@ -358,6 +367,7 @@ class App extends Component {
                 serviceCenter={this.state.serviceCenter}
                 serviceApp={this.state.serviceApp}
                 serviceSpecials={this.state.serviceSpecials}
+                allInventory={this.state.allInventory}
             />
         } else if (page === 'Schedule') {
             return <SchedulePage 
@@ -373,6 +383,7 @@ class App extends Component {
                 serviceCenter={this.state.serviceCenter}
                 serviceApp={this.state.serviceApp}
                 serviceSpecials={this.state.serviceSpecials}
+                allInventory={this.state.allInventory}
             />
         } else if (page === 'Recall') {
             return <RecallPage 
@@ -388,8 +399,9 @@ class App extends Component {
                 serviceCenter={this.state.serviceCenter}
                 serviceApp={this.state.serviceApp}
                 serviceSpecials={this.state.serviceSpecials}
+                allInventory={this.state.allInventory}
             />
-        } else if (page === 'RoadTrip') {
+        } else if (page === 'Road Trip') {
             return <RoadTripPage 
                 make={this.state.make}
                 model={this.state.model}
@@ -403,6 +415,23 @@ class App extends Component {
                 serviceCenter={this.state.serviceCenter}
                 serviceApp={this.state.serviceApp}
                 serviceSpecials={this.state.serviceSpecials}
+                allInventory={this.state.allInventory}
+            />
+        } else if (page === 'Road Trip Games') {
+            return <RoadTripGamePage 
+                make={this.state.make}
+                model={this.state.model}
+                year={this.state.year}
+                city={this.state.city}
+                zip={this.state.zip}
+                address={this.state.address}
+                state={this.state.state}
+                dealer={this.state.dealer}
+                phone={this.state.phone}
+                serviceCenter={this.state.serviceCenter}
+                serviceApp={this.state.serviceApp}
+                serviceSpecials={this.state.serviceSpecials}
+                allInventory={this.state.allInventory}
             />
         }
     }
@@ -492,7 +521,8 @@ class App extends Component {
                     <p onClick={()=>{this.setState({page: 'Diagnostics'})}}>Diagnostics</p>
                     <p onClick={()=>{this.setState({page: 'Schedule'})}}>Schedule Maintenance</p>
                     <p onClick={()=>{this.setState({page: 'Recall'})}}>Recall Information</p>
-                    <p onClick={()=>{this.setState({page: 'RoadTrip'})}}>Road Trip</p>
+                    <p onClick={()=>{this.setState({page: 'Road Trip'})}}>Road Trip</p>
+                    <p onClick={()=>{this.setState({page: 'Road Trip Games'})}}>Road Trip Games</p>
                 </div>
             </div>
             </div>

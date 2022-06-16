@@ -436,7 +436,7 @@ class RoadTrip extends Component {
             <div><CopyToClipboard text={copyContent()}><button className='copyBtnContent'>Copy Content</button></CopyToClipboard></div>
             <div className='contentHeaderContainer'>
                 <h1 className='contentHeader'>7 Tips and Tricks for the Best Summer Road Trip</h1>
-                <p className='contentHeaderParagraph'>Schedule your wheel alignment online now!</p>
+                {/* <p className='contentHeaderParagraph'>Schedule your wheel alignment online now!</p> */}
                 <div className='contentHeaderButtonContainer'>
                     <a href={this.props.serviceApp} target='_blank'><button className='contentHeaderButtons'>Schedule Service</button></a>
                     <a href={this.props.serviceSpecials} target='_blank'><button className='contentHeaderButtons'>View Service Specials</button></a>
