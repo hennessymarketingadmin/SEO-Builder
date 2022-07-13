@@ -15,6 +15,8 @@ import BrakesPage from './components/pages/brakes.js';
 import RoadTripPage from './components/pages/roadTrip.js';
 import RoadTripGamePage from './components/pages/roadTripGames.js';
 import RoadTripLocationsPage from './components/pages/RoadTripLocations.js'
+import BackToSchoolPage from './components/pages/backToSchool.js'
+
 class App extends Component {
     state = {
         display: false,
@@ -449,6 +451,22 @@ class App extends Component {
                 serviceSpecials={this.state.serviceSpecials}
                 allInventory={this.state.allInventory}
             />
+        } else if (page === 'Back to School') {
+            return <BackToSchoolPage 
+                make={this.state.make}
+                model={this.state.model}
+                year={this.state.year}
+                city={this.state.city}
+                zip={this.state.zip}
+                address={this.state.address}
+                state={this.state.state}
+                dealer={this.state.dealer}
+                phone={this.state.phone}
+                serviceCenter={this.state.serviceCenter}
+                serviceApp={this.state.serviceApp}
+                serviceSpecials={this.state.serviceSpecials}
+                allInventory={this.state.allInventory}
+            />
         }
     }
 
@@ -540,6 +558,7 @@ class App extends Component {
                     <p onClick={()=>{this.setState({page: 'Road Trip'})}}>Road Trip</p>
                     <p onClick={()=>{this.setState({page: 'Road Trip Games'})}}>Road Trip Games</p>
                     <p onClick={()=>{this.setState({page: 'Road Trip Locations'})}}>Road Trip Locations</p>
+                    <p onClick={()=>{this.setState({page: 'Back to School'})}}>Back to School</p>
                 </div>
             </div>
             </div>
@@ -560,5 +579,3 @@ class App extends Component {
 }
 
 export default App;
-
-//testing 2
